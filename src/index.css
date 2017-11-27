@@ -60,8 +60,10 @@ body {
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
 }
+}
 
-.StressForm {
+@media only screen and (min-width: 320px) {
+	.StressForm {
 display: inline-block;
 align-items: center;
 padding: 5%;
@@ -103,7 +105,6 @@ button:hover {
 	animation: bounce 1s;
 }
 }
-
 
 /*ipad and tablet view*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
