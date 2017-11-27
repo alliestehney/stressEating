@@ -15,12 +15,13 @@ class StressLevel extends Component {
         return (
           <div className="StressForm">
             <h1>Welcome, how do you feel?</h1>
-            <form >
-              <button type="submitlow" value="Low">😎</button>
-              <button type="submitmed" value="Medium">😨</button>
-              <button type="submithigh" value="High">😫</button>
+            <form className="StressIcon" >
+              <button className="StressLevelIcon" type="submitlow" value="Low" onClick={this.lowStress.bind(this)}>😎</button>
+              <button className="StressLevelIcon" type="submitmed" value="Medium">😨</button>
+              <button className="StressLevelIcon" type="submithigh" value="High">😫</button>
             </form>
           </div>
+
         );
       }
 
@@ -40,7 +41,7 @@ class StressLevel extends Component {
               this.setState({
                   highStress: event.target.value
               });
-          
+
 
 // //
 //     onSubmit(event) {
@@ -54,6 +55,8 @@ class StressLevel extends Component {
 //         })
         // Clear the form by simply updating the state with empty form values.
 
-    }
 }
+}
+
+
 export default StressLevel;

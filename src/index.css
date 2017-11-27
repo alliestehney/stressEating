@@ -14,6 +14,7 @@ body {
 	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
+  display: none;
 }
 
 
@@ -39,6 +40,11 @@ body {
 	display: flex;
 	justify-content: center;
 	justify-content: space-between;
+
+}
+
+.DietaryPref {
+  display: none;
 }
 
 /*mobile view*/
@@ -64,10 +70,10 @@ body {
 
 @media only screen and (min-width: 320px) {
 	.StressForm {
-display: inline-block;
-align-items: center;
+text-align: center;
+width: 75%;
+margin: 0 auto;
 padding: 5%;
-margin-left: 20%;
 background: hsla(230,40%,50%,1);
 margin-top: 25%;
 }
@@ -76,10 +82,9 @@ margin-top: 25%;
   -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-button {
+.StressLevelIcon {
   display: inline-block;
   background: none;
-  margin-left: 12%;
   font-size: 50px;
   border: none;
 }
@@ -101,11 +106,15 @@ button {
 	}
 }
 
-button:hover {
+.StressLevelIcon:hover {
 	animation: bounce 1s;
 }
 }
+.StressIcon {
+  display: flex;
+  justify-content: space-evenly;
 
+}
 /*ipad and tablet view*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 	.FlexContainer {
@@ -126,4 +135,3 @@ button:hover {
 	margin: 2%;
 }
 }
-
