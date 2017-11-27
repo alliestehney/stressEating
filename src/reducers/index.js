@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-	user_prefs:  []
+    user_prefs: []
 }
 
 export default function(state=INITIAL_STATE, action) {
