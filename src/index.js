@@ -7,8 +7,6 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
-// grab our reducer. import will automatically choose the index.js file in the
-// ./reducers folder.
 import reducer from './reducers';
 
 
@@ -25,5 +23,5 @@ ReactDOM.render(
        <App />
    </Provider>,
    document.getElementById('root')
-);
+
 registerServiceWorker();

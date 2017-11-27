@@ -1,11 +1,66 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (min-width: 420px)
-{
+.RecipeCard {
+	text-align: center;
+	width: 40%;
+	/*margin: 0 30%;*/
+	padding: 3% 0;
+	background-color: #66b1d6;
+	-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	margin: 2%;
+}
+
+
+.RecipeTitle {
+	padding-bottom: 5%;
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+.Ingredients li {
+	list-style-type: none;
+	margin-bottom: 2%;
+}
+
+.Ingredients {
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 5%;
+	font-weight: 300;
+}
+
+.FlexContainer {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+/*mobile view*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.FlexContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.RecipeCard {
+	text-align: center;
+	width: 100%;
+	/*margin: 0 30%;*/
+	padding: 3% 0;
+	background-color: #66b1d6;
+	-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	margin: 2%;
+}
+
 .StressForm {
 display: inline-block;
 align-items: center;
@@ -47,5 +102,27 @@ button {
 button:hover {
 	animation: bounce 1s;
 }
->>>>>>> akram
 }
+
+
+/*ipad and tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.FlexContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.RecipeCard {
+	text-align: center;
+	width: 80%;
+	/*margin: 0 30%;*/
+	padding: 3% 0;
+	background-color: #66b1d6;
+	-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+	margin: 2%;
+}
+}
+
