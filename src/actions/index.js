@@ -4,9 +4,3 @@ export function showDietaryForm(stressLevel, currentComponent) {
     stressLevel, currentComponent
   };
 }
-//
-// export function lowStress() {
-//     return {
-//         type: "LOW_STRESS"
-//     };
-// }

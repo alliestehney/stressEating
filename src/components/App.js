@@ -6,16 +6,6 @@ import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
-<<<<<<< HEAD
-    return (
-      <div className="App">
-        <DietaryPref/>
-        <StressLevel onClick={() => this.props.showDietaryForm}/>
-      	<Recipe />
-      </div>
-    );
-  }
-=======
 
     if (this.props.currentComponent === "stress_form") {
       return (
@@ -40,7 +30,6 @@ class App extends Component {
   //   );
   // }
 }
->>>>>>> 1c7173c5f486779f8d4443de93666ad196be5051
 }
 
 function mapStateToProps(state) {
