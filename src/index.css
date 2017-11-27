@@ -14,7 +14,7 @@ body {
 	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
-  display: none;
+  
 }
 
 
@@ -44,7 +44,7 @@ body {
 }
 
 .DietaryPref {
-  display: none;
+
 }
 
 /*mobile view*/
