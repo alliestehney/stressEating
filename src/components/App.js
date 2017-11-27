@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <DietaryPref/>
-        <StressLevel onClick={this.props.showDietaryForm}/>
+        <StressLevel onClick={() => this.props.showDietaryForm}/>
       	<Recipe />
       </div>
     );
