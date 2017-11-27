@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { showDietaryForm } from '../actions';
 
 class StressLevel extends Component {
 
   constructor(props) {
       super(props);
       this.state = {
-          lowStress: " ",
-          medStress: " ",
-          highStress: " ",
+    stressLevel:"",
+    currentComponent:""
       };
   }
 
@@ -16,31 +17,23 @@ class StressLevel extends Component {
           <div className="StressForm">
             <h1>Welcome, how do you feel?</h1>
             <form className="StressIcon" >
-              <button className="StressLevelIcon" type="submitlow" value="Low" onClick={this.lowStress.bind(this)}>😎</button>
-              <button className="StressLevelIcon" type="submitmed" value="Medium">😨</button>
-              <button className="StressLevelIcon" type="submithigh" value="High">😫</button>
+              <button className="StressLevelIcon" type="submitlow" value="low" onClick={this.handleChange.bind(this)}>😎</button>
+              <button className="StressLevelIcon" type="submitmed" value="medium" onClick={this.handleChange.bind(this)} >😨</button>
+              <button className="StressLevelIcon" type="submithigh" value="high" onClick={this.handleChange.bind(this)}>😫</button>
             </form>
           </div>
 
         );
       }
 
-          lowStress(event) {
-              this.setState({
-                  lowStress: event.target.value
-              });
-          }
+      handleChange(event) {
+        this.setState({
+          stressLevel: event.target.value,
+          currentComponent: "dietary_restrictions"
+        });
+      }
 
-          medStress(event) {
-              this.setState({
-                  medStress: event.target.value
-              });
-          }
 
-          highStress(event) {
-              this.setState({
-                  highStress: event.target.value
-              });
 
 
 // //
@@ -56,7 +49,11 @@ class StressLevel extends Component {
         // Clear the form by simply updating the state with empty form values.
 
 }
+
+
+const mapActionsToProps = {
+    showDietaryForm
 }
 
 
-export default StressLevel;
+export default connect(null, mapActionsToProps)(StressLevel);
