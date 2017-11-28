@@ -4,6 +4,7 @@ import StressLevel from './StressLevel';
 import Recipe from "./Recipes";
 import { connect } from 'react-redux';
 import { showDietaryForm } from '../actions';
+import RecipesList from "./RecipesList";
 
 class App extends Component {
   render() {
@@ -18,7 +19,7 @@ class App extends Component {
     //     );
     // } else {
         return(
-          <Recipe recipes={this.props.recipes}/>
+          <RecipesList recipes={this.props.recipes}/>
       );
   //   }
   // }
