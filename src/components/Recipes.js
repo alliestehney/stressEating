@@ -13,9 +13,7 @@ class Recipe extends Component {
 					<div className="RecipeTitle">{recipe.label}</div>
 					<img src={recipe.image} alt="recipe image"  />
 					<div className="Ingredients">
-						<li>INGREDIENT ONE</li>
-						<li>INGREDIENT TWO</li>
-						<li>INGREDIENT THREE</li>
+						<li>{recipe.ingredientLines}</li>
 					</div>
 				</div>
 			</div>
