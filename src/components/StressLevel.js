@@ -17,9 +17,9 @@ class StressLevel extends Component {
           <div className="StressForm">
             <h1>Welcome, how do you feel?</h1>
             <ul className="StressIcon" >
-              <li>  <button className="StressLevelIcon" type="submitlow" value="low" onClick={this.handleClick.bind(this)}>😎</button> </li>
-              <li> <button className="StressLevelIcon" type="submitmed" value="medium" onClick={this.handleClick.bind(this)} >😨</button> </li>
-              <li>  <button className="StressLevelIcon" type="submithigh" value="high" onClick={this.handleClick.bind(this)}>😫</button> </li>
+              <li>  <button className="StressLevelIcon" type="button" value="low" onClick={this.handleClick.bind(this)}>😎</button> </li>
+              <li> <button className="StressLevelIcon" type="button" value="medium" onClick={this.handleClick.bind(this)} >😨</button> </li>
+              <li>  <button className="StressLevelIcon" type="button" value="high" onClick={this.handleClick.bind(this)}>😫</button> </li>
             </ul>
           </div>
 

@@ -21,9 +21,6 @@ const store = createStore(
 );
 
 
-store.dispatch(fetchRecipes());
-
-
 // We need wrap our whole app in the Provider component. This lets Redux do its magic.
 ReactDOM.render(
    <Provider store={store}>

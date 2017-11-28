@@ -16,8 +16,10 @@ export default function(state=INITIAL_STATE, action) {
               return Object.assign({}, state, {
               });
           case "RECEIVE_RECIPES":
+            console.log("receive recs");
               return Object.assign({}, state, {
-                recipes: action.recipes
+                recipes: action.recipes,
+                currentComponent: "recipe_list"
               });
 
 		default:

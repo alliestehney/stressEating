@@ -9,36 +9,32 @@ import RecipesList from "./RecipesList";
 class App extends Component {
   render() {
 
-    // if (this.props.currentComponent === "stress_form") {
-    //   return (
-    //     <StressLevel onClick= {this.props.showDietaryForm}/>
-    //   );
-    // } else if(this.props.currentComponent === "dietary_restrictions"){
-    //     return (
-    //       <DietaryPref/>
-    //     );
-    // } else {
+    if (this.props.currentComponent === "stress_form") {
+      return (
+        <StressLevel onClick= {this.props.showDietaryForm}/>
+      );
+    } else if(this.props.currentComponent === "dietary_restrictions"){
+        return (
+          <DietaryPref/>
+        );
+    } else {
         return(
           <RecipesList recipes={this.props.recipes}/>
       );
-  //   }
-  // }
+
+   }
 }
 }
-//
-// const mapActionsToProps = {
-//   showDietaryForm
-// }
-// function mapStateToProps(state) {
-//   return {
-//     currentComponent: state.currentComponent
-//   }
-// }
-//
-// export default connect(mapStateToProps,mapActionsToProps)(App);
+
+const mapActionsToProps = {
+  showDietaryForm
+}
+
+
 function mapStateToProps(state) {
 return {
-  recipes: state.recipes
+  recipes: state.recipes,
+    currentComponent: state.currentComponent
   }
 }
-  export default connect(mapStateToProps)(App);
+  export default connect(mapStateToProps,mapActionsToProps)(App);
