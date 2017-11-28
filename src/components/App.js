@@ -8,30 +8,36 @@ import { showDietaryForm } from '../actions';
 class App extends Component {
   render() {
 
-    if (this.props.currentComponent === "stress_form") {
-      return (
-        <StressLevel onClick= {this.props.showDietaryForm}/>
-      );
-    } else if(this.props.currentComponent === "dietary_restrictions"){
-        return (
-          <DietaryPref/>
-        );
-    } else {
+    // if (this.props.currentComponent === "stress_form") {
+    //   return (
+    //     <StressLevel onClick= {this.props.showDietaryForm}/>
+    //   );
+    // } else if(this.props.currentComponent === "dietary_restrictions"){
+    //     return (
+    //       <DietaryPref/>
+    //     );
+    // } else {
         return(
-          <Recipe/>
+          <Recipe recipes={this.props.recipes}/>
       );
-    }
-  }
+  //   }
+  // }
 }
-
-
-const mapActionsToProps = {
-  showDietaryForm
 }
+//
+// const mapActionsToProps = {
+//   showDietaryForm
+// }
+// function mapStateToProps(state) {
+//   return {
+//     currentComponent: state.currentComponent
+//   }
+// }
+//
+// export default connect(mapStateToProps,mapActionsToProps)(App);
 function mapStateToProps(state) {
-  return {
-    currentComponent: state.currentComponent
+return {
+  recipes: state.recipes
   }
 }
-
-export default connect(mapStateToProps,mapActionsToProps)(App);
+  export default connect(mapStateToProps)(App);

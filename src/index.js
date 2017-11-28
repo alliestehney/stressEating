@@ -8,14 +8,21 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import reducer from './reducers';
+import { fetchRecipes } from './actions';
+import thunkMiddleware from 'redux-thunk';
+
 
 
 // Create the redux Store. This is the central hub of Redux. It keeps track of
 // the state (data) and calls the reducers.
 const store = createStore(
-   reducer,
-   applyMiddleware( createLogger() ) // Enable Redux logging which is handy for developers.
+    reducer,
+    applyMiddleware( thunkMiddleware, createLogger() ) // Enable Redux logging which is handy for developers.
 );
+
+
+store.dispatch(fetchRecipes());
+
 
 // We need wrap our whole app in the Provider component. This lets Redux do its magic.
 ReactDOM.render(
@@ -25,5 +32,3 @@ ReactDOM.render(
    document.getElementById('root')
 );
 registerServiceWorker();
-
-
