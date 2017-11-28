@@ -23,7 +23,7 @@ class DietaryPref extends Component{
             <p>
                 <label> <input type="checkbox" checked={this.state.selected} onChange={this.handleVeganChange.bind(this)} /> Vegan </label>
                 <label> <input type="checkbox" checked={this.state.selected} onChange={this.handleVegetarianChange.bind(this)}/> Vegatarian </label>
-                <label>   <input type="checkbox" checked={this.state.selected} onChange={this.handleGlutenFreeChange.bind(this)}/> Gluten-Free </label>
+                <label> <input type="checkbox" checked={this.state.selected} onChange={this.handleGlutenFreeChange.bind(this)}/> Gluten-Free </label>
                 <label> <input type="checkbox" checked={this.state.selected} onChange={this.handleNutFreeChange.bind(this)} /> Nut-Free </label>
                 <label> <input type="checkbox" checked={this.state.selected} onChange={this.handleDairyFreeChange.bind(this)}/> Dairy-Free </label>
                 <label> <input type="checkbox" checked={this.state.selected} onChange={this.handleNoneChange.bind(this)}/> None </label>

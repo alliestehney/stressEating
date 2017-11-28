@@ -16,11 +16,11 @@ class StressLevel extends Component {
         return (
           <div className="StressForm">
             <h1>Welcome, how do you feel?</h1>
-            <form className="StressIcon" >
-              <button className="StressLevelIcon" type="submitlow" value="low" onClick={this.handleChange.bind(this)}>😎</button>
-              <button className="StressLevelIcon" type="submitmed" value="medium" onClick={this.handleChange.bind(this)} >😨</button>
-              <button className="StressLevelIcon" type="submithigh" value="high" onClick={this.handleChange.bind(this)}>😫</button>
-            </form>
+            <ul className="StressIcon" >
+              <li><button className="StressLevelIcon" type="submitlow" value="low" onClick={this.handleChange.bind(this)}>😎</button></li>
+              <li><button className="StressLevelIcon" type="submitmed" value="medium" onClick={this.handleChange.bind(this)} >😨</button></li>
+              <li><button className="StressLevelIcon" type="submithigh" value="high" onClick={this.handleChange.bind(this)}>😫</button></li>
+            </ul>
           </div>
 
         );
@@ -32,7 +32,6 @@ class StressLevel extends Component {
           currentComponent: "dietary_restrictions"
         });
       }
-
 
 }
 
