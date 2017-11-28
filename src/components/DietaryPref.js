@@ -12,7 +12,7 @@ constructor(props){
  NutSelected:false,
  DairySelected:false,
  NoneSelected:false,
-// notSelected:""
+
   };
 }
 render(){
