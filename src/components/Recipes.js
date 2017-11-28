@@ -10,8 +10,8 @@ class Recipe extends Component {
 		return(
 			<div className="FlexContainer">
 				<div className="RecipeCard">
-					<div className="RecipeTitle">{recipe.label}PLS</div>
-					<img src="" alt="recipe image" />
+					<div className="RecipeTitle">{recipe.label}</div>
+					<img src={recipe.image} alt="recipe image"  />
 					<div className="Ingredients">
 						<li>INGREDIENT ONE</li>
 						<li>INGREDIENT TWO</li>

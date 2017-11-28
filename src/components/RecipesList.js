@@ -8,7 +8,7 @@ class RecipesList extends Component {
         return (
             <ul className="RecipeList">
                 {this.props.recipes.map(recipe =>
-                    <Recipe key={recipe.uri} recipe={recipe} />
+                    <Recipe key={recipe.recipe.uri} recipe={recipe.recipe} />
                 )}
             </ul>
         );

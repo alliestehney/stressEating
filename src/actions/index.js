@@ -3,10 +3,10 @@ import $ from 'jquery-ajax';
 // trigger the process, make the request, and call the other two actions
 // url with default argument. If called without an argument (as in index.js), it
 // will default to the main URL.
-export function fetchRecipes(url = "/fakeApi.json") {
+export function fetchRecipes() {
     return function(dispatch) {
         dispatch(requestRecipes());
-        $.get(url, function(data) {
+        $.get("/fakeApi.json", function(data) {
             // // Here is where we dig into the response JSON to find the data we actually need.
             const recipes = data.hits;
             // const prevPageUrl = data.previous;
