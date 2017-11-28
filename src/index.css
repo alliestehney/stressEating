@@ -135,3 +135,11 @@ margin-top: 25%;
 	margin: 2%;
 }
 }
+
+.StressIcon {
+	list-style-type: none;
+}
+
+.StressLevelIcon:hover {
+	cursor: pointer;
+}

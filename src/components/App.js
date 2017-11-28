@@ -4,6 +4,7 @@ import StressLevel from './StressLevel';
 import Recipe from "./Recipes";
 import { connect } from 'react-redux';
 import { showDietaryForm } from '../actions';
+import { showRecipes } from '../actions';
 import RecipesList from "./RecipesList";
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
       );
     } else if(this.props.currentComponent === "dietary_restrictions"){
         return (
-          <DietaryPref />
+          <DietaryPref onSubmit={this.props.showRecipes}/>
         );
     } else {
         return(
@@ -27,14 +28,15 @@ class App extends Component {
 }
 
 const mapActionsToProps = {
-  showDietaryForm
+  showDietaryForm,
+  showRecipes
 }
 
 
 function mapStateToProps(state) {
 return {
   recipes: state.recipes,
-    currentComponent: state.currentComponent
+  currentComponent: state.currentComponent
   }
 }
   export default connect(mapStateToProps,mapActionsToProps)(App);

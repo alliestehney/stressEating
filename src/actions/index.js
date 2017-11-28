@@ -37,3 +37,9 @@ export function showDietaryForm() {
     type: "SHOW_DIETARY_FORM"
   };
 }
+
+export function showRecipes() {
+  return {
+    type: "SHOW_RECIPES"
+  };
+}
