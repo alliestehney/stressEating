@@ -8,7 +8,8 @@ export default function(state=INITIAL_STATE, action) {
 	switch(action.type) {
 		case "SHOW_DIETARY_FORM":
 			return Object.assign({}, state, {
-				currentComponent: action.currentComponent
+				stressLevel: action.stressLevel,
+				currentComponent: "dietary_restrictions"
 			});
 		default:
 			return state;

@@ -1,6 +1,6 @@
-export function showDietaryForm(currentComponent) {
+
+export function showDietaryForm() {
   return {
-    type: "SHOW_DIETARY_FORM",
-    currentComponent
+    type: "SHOW_DIETARY_FORM"
   };
 }

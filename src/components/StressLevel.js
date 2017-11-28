@@ -17,28 +17,24 @@ class StressLevel extends Component {
           <div className="StressForm">
             <h1>Welcome, how do you feel?</h1>
             <ul className="StressIcon" >
-              <li><button className="StressLevelIcon" type="submitlow" value="low" onClick={this.handleChange.bind(this)}>😎</button></li>
-              <li><button className="StressLevelIcon" type="submitmed" value="medium" onClick={this.handleChange.bind(this)} >😨</button></li>
-              <li><button className="StressLevelIcon" type="submithigh" value="high" onClick={this.handleChange.bind(this)}>😫</button></li>
+              <li>  <button className="StressLevelIcon" type="submitlow" value="low" onClick={this.handleClick.bind(this)}>😎</button> </li>
+              <li> <button className="StressLevelIcon" type="submitmed" value="medium" onClick={this.handleClick.bind(this)} >😨</button> </li>
+              <li>  <button className="StressLevelIcon" type="submithigh" value="high" onClick={this.handleClick.bind(this)}>😫</button> </li>
             </ul>
           </div>
 
         );
       }
 
-      handleChange(event) {
-        this.setState({
-          stressLevel: event.target.value,
-          currentComponent: "dietary_restrictions"
+      handleClick(event) {
+        event.preventDefault();
+        this.props.onClick({
+            stressLevel: event.target.value,
         });
+
       }
 
 }
 
 
-const mapActionsToProps = {
-    showDietaryForm
-}
-
-
-export default connect(null, mapActionsToProps)(StressLevel);
+export default StressLevel;
