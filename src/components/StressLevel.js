@@ -7,8 +7,8 @@ class StressLevel extends Component {
   constructor(props) {
       super(props);
       this.state = {
-    stressLevel:"",
-    currentComponent:""
+        stressLevel:"",
+        currentComponent:""
       };
   }
 
@@ -33,20 +33,6 @@ class StressLevel extends Component {
         });
       }
 
-
-
-
-// //
-//     onSubmit(event) {
-//         // by default a form submission will refresh the page. preventDefault stops that from happening.
-//         event.preventDefault();
-//         // Call the function that App.js passes into the onSubmit attribute.
-//         // Pass it a new contact object.
-//         this.props.onSubmit({
-//             email: this.state.email,
-//             password: this.state.password
-//         })
-        // Clear the form by simply updating the state with empty form values.
 
 }
 
