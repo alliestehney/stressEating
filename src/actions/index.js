@@ -1,6 +1,5 @@
-export function showDietaryForm(stressLevel, currentComponent) {
+export function showDietaryForm() {
   return {
-    type: "SHOW_DIETARY_FORM",
-    stressLevel, currentComponent
+    type: "SHOW_DIETARY_FORM"
   };
 }
