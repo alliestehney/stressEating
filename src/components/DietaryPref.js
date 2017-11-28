@@ -11,9 +11,11 @@ constructor(props){
  GlutenSelected:false,
  NutSelected:false,
  DairySelected:false,
- NoneSelected:false,
+ NoneSelected:false
+};
 }
-render(){
+
+render() {
   return(
     <form className = "DietaryPref">
       <h2>Dietary Preferences</h2>
