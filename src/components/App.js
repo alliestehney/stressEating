@@ -12,24 +12,15 @@ class App extends Component {
         <StressLevel />
       );
     } else if(this.props.currentComponent === "dietary_restrictions"){
-     return(<DietaryPref/>
-     );
-   } else {
-     return(<Recipe/>
-     );
+        return (
+          <DietaryPref/>
+        );
+    } else {
+        return(
+          <Recipe/>
+      );
     }
-
-  //   return (
-  //     <div className="App">
-  //
-  //
-  //       <DietaryPref/>
-  //       <StressLevel onClick={this.props.showDietaryForm}/>
-  //     	<Recipe />
-  //     </div>
-  //   );
-  // }
-}
+  }
 }
 
 function mapStateToProps(state) {
@@ -37,4 +28,5 @@ function mapStateToProps(state) {
     currentComponent: state.currentComponent
   }
 }
+
 export default connect(mapStateToProps)(App);
