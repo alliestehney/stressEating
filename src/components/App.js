@@ -15,7 +15,7 @@ class App extends Component {
       );
     } else if(this.props.currentComponent === "dietary_restrictions"){
         return (
-          <DietaryPref/>
+          <DietaryPref />
         );
     } else {
         return(

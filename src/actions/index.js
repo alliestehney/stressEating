@@ -16,28 +16,19 @@ export function fetchRecipes() {
     }
 }
 
-function requestRecipes() {
+export function requestRecipes() {
     return {
         type: "REQUEST_RECIPES"
     }
 }
 
 // Allow the reducer to update the state when the request finishes and brings back data.
-function receiveRecipes(recipes) {
+export function receiveRecipes(recipes) {
     return {
         type: "RECEIVE_RECIPES",
         recipes
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 

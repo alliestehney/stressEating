@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { receiveRecipes } from '../actions';
 
 
 class DietaryPref extends Component{
@@ -36,7 +37,7 @@ render() {
 
             </p>
 
-      <button type="submit"> Submit</button>
+      <button type="button" onSubmit={this.onSubmit.bind(this)}> Submit</button>
 
     </form>
   );
@@ -72,5 +73,37 @@ render() {
             NoneSelected: event.target.checked
         });
     }
+    onSubmit(event){
+      event.preventDefault();
+
+    const submission = {
+      VeganSelected:this.state.VeganSelected,
+      VegatarianSelected:this.state.VegatarianSelected,
+      GlutenSelected:this.state.GlutenSelected,
+      NutSelected:this.state.NutSelected,
+      DairySelected:this.state.DairySelected,
+      NoneSelected:this.state.NoneSelected
+
+    }
+
+
+    this.props.onSubmit(submission);
+
+
+    this.setState({
+      VeganSelected:false,
+      VegatarianSelected:false,
+      GlutenSelected:false,
+      NutSelected:false,
+      DairySelected:false,
+      NoneSelected:false
+    });
 }
-export default DietaryPref;
+
+}
+
+const mapActionsToProps = {
+onSubmit: receiveRecipes
+}
+
+export default connect (null, mapActionsToProps)(DietaryPref);
