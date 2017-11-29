@@ -96,7 +96,7 @@ render() {
     handleSubmit(event) {
       event.preventDefault();
       this.props.onSubmit({
-        //
+        currentComponent: "recipe_list"
       });
     }
 
