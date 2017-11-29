@@ -16,7 +16,7 @@ class App extends Component {
       );
     } else if(this.props.currentComponent === "dietary_restrictions"){
         return (
-          <DietaryPref onSubmit={this.props.showRecipes}/>
+          <DietaryPref onSubmit={this.props.receiveRecipes}/>
         );
     } else {
         return(
@@ -29,7 +29,7 @@ class App extends Component {
 
 const mapActionsToProps = {
   showDietaryForm,
-  showRecipes
+  recieveRecipes
 }
 
 
