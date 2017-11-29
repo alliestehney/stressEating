@@ -11,6 +11,7 @@ export function fetchRecipes() {
             const recipes = data.hits;
             // const prevPageUrl = data.previous;
             // const nextPageUrl = data.next;
+            console.log(recipes);
             dispatch(receiveRecipes(recipes));
         });
     }
@@ -30,8 +31,6 @@ export function receiveRecipes(recipes) {
     }
 }
 
-
-
 export function showDietaryForm() {
   return {
     type: "SHOW_DIETARY_FORM"
@@ -40,6 +39,6 @@ export function showDietaryForm() {
 
 export function showRecipes() {
   return {
-    type: "SHOW_RECIPES"
+    type: "SHOW_RECIPES",
   };
 }

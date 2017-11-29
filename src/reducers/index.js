@@ -12,15 +12,18 @@ export default function(state=INITIAL_STATE, action) {
 				  stressLevel: action.stressLevel,
 				  currentComponent: "dietary_restrictions"
 			 });
-    case "SHOW_RECIPES":
-      return Object.assign({}, state, {
-        currentComponent: "recipe_list"
-      });
+    // case "SHOW_RECIPES":
+    // console.log('showit');
+    //   return Object.assign({}, state, {
+    //   recipes: action.recipes,
+    //     currentComponent: "recipe_list"
+    //   });
     case "REQUEST_RECIPES":
        return Object.assign({}, state, {
         });
     case "RECEIVE_RECIPES":
         console.log("receive recs");
+        console.log(action.recipes);
         return Object.assign({}, state, {
             recipes: action.recipes,
             currentComponent: "recipe_list"

@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { showDietaryForm } from '../actions';
 import { showRecipes } from '../actions';
 import RecipesList from "./RecipesList";
+import { receiveRecipes } from "../actions";
 
 class App extends Component {
   render() {
