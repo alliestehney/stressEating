@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { receiveRecipes } from '../actions';
+import { showRecipes } from '../actions';
+import { fetchRecipes } from '../actions';
 
 
 class DietaryPref extends Component{
@@ -96,13 +98,13 @@ render() {
     handleSubmit(event) {
       event.preventDefault();
       this.props.onSubmit({
-        currentComponent: "recipe_list"
+        // currentComponent: "recipe_list"
       });
     }
 
 }
 const mapActionsToProps = {
-onSubmit: receiveRecipes
+onSubmit: fetchRecipes
 }
 
 export default connect (null, mapActionsToProps)(DietaryPref);
