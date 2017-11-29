@@ -30,7 +30,7 @@ class App extends Component {
 
 const mapActionsToProps = {
   showDietaryForm,
-  recieveRecipes
+  receiveRecipes
 }
 
 

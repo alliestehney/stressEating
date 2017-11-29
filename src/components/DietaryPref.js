@@ -6,17 +6,17 @@ import { fetchRecipes } from '../actions';
 
 
 class DietaryPref extends Component{
-constructor(props){
-  super(props);
-  this.state = {
-     VeganSelected:false,
-     VegatarianSelected:false,
-     GlutenSelected:false,
-     NutSelected:false,
-     DairySelected:false,
-     NoneSelected:false
-};
-}
+  constructor(props){
+    super(props);
+    this.state = {
+      vegan: false,
+      vegetarian: false,
+      glutenfree: false,
+      nutfree: false,
+      dairyfree: false,
+      none: false
+    };
+  }
 
 render() {
   return(
@@ -24,12 +24,12 @@ render() {
       <h2>Dietary Preferences</h2>
       <label className="Dietary__label">Dietary Preferences</label>
       <p>
-        <label> <input type="checkbox" /> Vegan </label>
-        <label> <input type="checkbox" /> Vegatarian </label>
-        <label> <input type="checkbox" /> Gluten-Free </label>
-        <label> <input type="checkbox" /> Nut-Free </label>
-        <label> <input type="checkbox" /> Dairy-Free </label>
-        <label> <input type="checkbox" /> None </label>
+        <label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label>
+        <label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegatarian </label>
+        <label><input type="checkbox" name="glutenfree" checked={this.state.glutenfree} onChange={this.handleInputChange.bind(this)}/> Gluten-Free </label>
+        <label><input type="checkbox" name="nutfree" checked={this.state.nutfree} onChange={this.handleInputChange.bind(this)}/> Nut-Free </label>
+        <label><input type="checkbox" name="dairyfree" checked={this.state.dairyfree} onChange={this.handleInputChange.bind(this)}/> Dairy-Free </label>
+        <label><input type="checkbox" name="none" checked={this.state.none} onChange={this.handleInputChange.bind(this)}/> None </label>
      </p>
 
       <button type="submit"> Submit</button>
@@ -38,35 +38,20 @@ render() {
   );
   }
 
-  handleVeganChange(event) {
-        this.setState({
-            VeganSelected: event.target.checked
-        });
-    }
-    handleVegetarianChange(event) {
-        this.setState({
-            VegatarianSelected: event.target.checked
-        });
-    }
-    handleGlutenFreeChange(event) {
-        this.setState({
-            GlutenSelected: event.target.checked
-        });
-    }
-    handleNutFreeChange(event) {
-        this.setState({
-            NutSelected: event.target.checked
-        });
-    }
-    handleDairyFreeChange(event) {
-        this.setState({
-            DairySelected: event.target.checked
-        });
-    }
-    handleNoneChange(event) {
-        this.setState({
-            NoneSelected: event.target.checked
-        });
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.checked;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+    handleSubmit(event) {
+      this.setState({
+
+      });
     }
     // onSubmit(event){
     //   event.preventDefault();
