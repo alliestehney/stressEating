@@ -14,7 +14,7 @@ class DietaryPref extends Component{
       glutenfree: false,
       nutfree: false,
       dairyfree: false,
-      none: false
+      soyfree: false
     };
   }
 
@@ -29,7 +29,7 @@ render() {
         <label><input type="checkbox" name="glutenfree" checked={this.state.glutenfree} onChange={this.handleInputChange.bind(this)}/> Gluten-Free </label>
         <label><input type="checkbox" name="nutfree" checked={this.state.nutfree} onChange={this.handleInputChange.bind(this)}/> Nut-Free </label>
         <label><input type="checkbox" name="dairyfree" checked={this.state.dairyfree} onChange={this.handleInputChange.bind(this)}/> Dairy-Free </label>
-        <label><input type="checkbox" name="none" checked={this.state.none} onChange={this.handleInputChange.bind(this)}/> None </label>
+        <label><input type="checkbox" name="soyfree" checked={this.state.soyfree} onChange={this.handleInputChange.bind(this)}/> Soy-Free </label>
      </p>
 
       <button type="submit"> Submit</button>
