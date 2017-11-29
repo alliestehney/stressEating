@@ -17,9 +17,12 @@ let dairyfree = "&health=dairy-free";
 let soyfree = "&health=soy-free";
 
 export function fetchRecipes() {
-    return function(dispatch) {
+    return function(dispatch, getState) {
         dispatch(requestRecipes());
         $.get((baseURL + nutfree), function(data) {
+
+            const state = getState();
+            state.stressLevel
 
             // // Here is where we dig into the response JSON to find the data we actually need.
             const recipes = data.hits;
@@ -45,9 +48,10 @@ export function receiveRecipes(recipes, dietaryRestrictions) {
     }
 }
 
-export function showDietaryForm() {
+export function showDietaryForm(stressLevel) {
   return {
-    type: "SHOW_DIETARY_FORM"
+    type: "SHOW_DIETARY_FORM",
+    stressLevel
   };
 }
 

@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    stressLevel: "low",
+    stressLevel: "",
     dietaryRestrictions: [],
 	  currentComponent: "stress_form",
     recipes: []
