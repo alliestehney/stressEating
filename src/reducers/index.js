@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
     stressLevel: "low",
-    dietaryRestrictions: "none",
+    dietaryRestrictions: [],
 	  currentComponent: "stress_form",
     recipes: []
 }
@@ -22,12 +22,15 @@ export default function(state=INITIAL_STATE, action) {
        return Object.assign({}, state, {
         });
     case "RECEIVE_RECIPES":
-        console.log("receive recs");
-        console.log(action.recipes);
+console.log("Test");
         return Object.assign({}, state, {
+
             recipes: action.recipes,
-            currentComponent: "recipe_list"
+            currentComponent: "recipe_list",
+            dietaryRestrictions: action.dietaryRestrictions,
+
         });
+        console.log(action.dietaryRestrictions);
 
 		default:
 			return state;

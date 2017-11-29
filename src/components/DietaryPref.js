@@ -5,6 +5,7 @@ import { showRecipes } from '../actions';
 import { fetchRecipes } from '../actions';
 
 
+
 class DietaryPref extends Component{
   constructor(props){
     super(props);
@@ -48,42 +49,42 @@ render() {
     });
   }
 
-    handleSubmit(event) {
-      this.setState({
-
-      });
-    }
-    // onSubmit(event){
-    //   event.preventDefault();
-
-    // const submission = {
-    //   VeganSelected:this.state.VeganSelected,
-    //   VegatarianSelected:this.state.VegatarianSelected,
-    //   GlutenSelected:this.state.GlutenSelected,
-    //   NutSelected:this.state.NutSelected,
-    //   DairySelected:this.state.DairySelected,
-    //   NoneSelected:this.state.NoneSelected
-
+    // handleSubmit(event) {
+    //   this.setState({
+    //
+    //   });
     // }
 
 
-//     this.props.onSubmit(submission);
-
-
-//     this.setState({
-//       VeganSelected:false,
-//       VegatarianSelected:false,
-//       GlutenSelected:false,
-//       NutSelected:false,
-//       DairySelected:false,
-//       NoneSelected:false
-//     });
-// }
-
     handleSubmit(event) {
       event.preventDefault();
+      var newRestrictions = [];
+
+      if(this.state.vegan === true){
+        newRestrictions.push("vegan");
+
+      }
+      if(this.state.vegetarian === true){
+        newRestrictions.push("vegetarian");
+
+      }
+      if(this.state.glutenfree === true){
+        newRestrictions.push("glutenfree");
+      }
+      if(this.state.nutfree === true){
+        newRestrictions.push("nutfree");
+      }
+      if(this.state.dairyfree === true){
+        newRestrictions.push("dairyfree");
+      }
+      if(this.state.soyfree === true){
+        newRestrictions.push("soyfree");
+      }
+
+      console.log(newRestrictions);
       this.props.onSubmit({
-        // currentComponent: "recipe_list"
+        dietaryRestrictions: newRestrictions
+
       });
     }
 

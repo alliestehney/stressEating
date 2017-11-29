@@ -20,12 +20,12 @@ export function fetchRecipes() {
     return function(dispatch) {
         dispatch(requestRecipes());
         $.get((baseURL + nutfree), function(data) {
-          console.log(baseURL + medium + vegan);
+
             // // Here is where we dig into the response JSON to find the data we actually need.
             const recipes = data.hits;
             // const prevPageUrl = data.previous;
             // const nextPageUrl = data.next;
-            console.log(recipes);
+
             dispatch(receiveRecipes(recipes));
         });
     }
@@ -38,10 +38,10 @@ export function requestRecipes() {
 }
 
 // Allow the reducer to update the state when the request finishes and brings back data.
-export function receiveRecipes(recipes) {
+export function receiveRecipes(recipes, dietaryRestrictions) {
     return {
         type: "RECEIVE_RECIPES",
-        recipes
+        recipes, dietaryRestrictions
     }
 }
 
@@ -56,3 +56,9 @@ export function showRecipes() {
     type: "SHOW_RECIPES",
   };
 }
+// export function addDiet(dietaryRestrictions) {
+//   return {
+//     type: "ADD_DIET",
+//     dietaryRestrictions
+//   };
+// }

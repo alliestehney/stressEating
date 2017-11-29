@@ -37,7 +37,8 @@ const mapActionsToProps = {
 function mapStateToProps(state) {
 return {
   recipes: state.recipes,
-  currentComponent: state.currentComponent
+  currentComponent: state.currentComponent,
+  dietaryRestrictions: state.dietaryRestrictions
   }
 }
   export default connect(mapStateToProps,mapActionsToProps)(App);
