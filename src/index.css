@@ -5,7 +5,13 @@ body {
   font-weight: 300;
   background-image: url("/backgroundImage2.jpg");
   color: white;
-  background-size: cover;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html, body {
+  min-height: 100%;
 }
 
 .RecipeCard {
@@ -50,6 +56,20 @@ body {
 
 .DietaryPref {
 
+}
+.StressForm {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 5%;
+  margin-top: 15%;
+}
+
+.StressLevelIcon {
+  display: inline-block;
+  background: none;
+  font-size: 50px;
+  border: none;
 }
 
 /*mobile view*/
