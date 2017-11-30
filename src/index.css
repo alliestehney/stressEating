@@ -19,19 +19,23 @@ html, body {
 	width: 40%;
 	/*margin: 0 30%;*/
 	padding: 3% 0;
-	background-color: #66b1d6;
+/*	background-color: #F9F9F9;*/
+	background-color:rgba(255,255,255, 0.9);
 	-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
+	color: gray;
+	padding: 1%;
 
 }
 
-
 .RecipeTitle {
 	padding-bottom: 5%;
-	font-weight: 500;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-family: 'Yantramanav', sans-serif;
+	height: 7%;
 }
 
 .Ingredients li {
@@ -46,11 +50,19 @@ html, body {
 	font-weight: 300;
 }
 
+
+.RecipesBackground {
+	background-image: url("/backgroundImage2.jpg");
+	background-size: auto;
+  	background-position: center;
+  	background-repeat: no-repeat;
+}
+
 .FlexContainer {
 	display: flex;
 	justify-content: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
+/*	flex-wrap: wrap;*/
 
 }
 
