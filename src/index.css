@@ -166,7 +166,7 @@ display: flex;
   width: 60%;
   display: flex;
   justify-content: center;
-
+}
 
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
