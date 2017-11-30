@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Recipe from './Recipes';
+InfiniteScroll = require('react-infinite-scroll')(React);
 
 class RecipesList extends Component {
 
