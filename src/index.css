@@ -70,10 +70,8 @@ body {
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
 }
-}
 
-@media only screen and (min-width: 320px) {
-	.StressForm {
+.StressForm {
 text-align: center;
 width: 75%;
 margin: 0 auto;
@@ -82,11 +80,14 @@ margin-top: 15%;
 }
 
 .StressLevelIcon {
-  display: inline-block;
-  background: none;
-  font-size: 50px;
-  border: none;
+display: inline-block;
+background: none;
+font-size: 50px;
+border: none;
 }
+
+}
+
 
 
 @keyframes bounce {
@@ -109,7 +110,7 @@ margin-top: 15%;
 .StressLevelIcon:hover {
 	animation: bounce 1s;
 }
-}
+
 .StressIcon {
   display: flex;
   justify-content: space-evenly;
