@@ -23,7 +23,7 @@ render() {
   return(
     <form className = "DietaryPref" onSubmit={this.handleSubmit.bind(this)}>
       <h2>Dietary Preferences</h2>
-      <label className="Dietary__label">Dietary Preferences</label>
+      <label className="Dietary__label"></label>
       <p>
         <label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label>
         <label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegatarian </label>
@@ -33,7 +33,7 @@ render() {
         <label><input type="checkbox" name="highprotein" checked={this.state.highprotein} onChange={this.handleInputChange.bind(this)}/> High Protein </label>
      </p>
 
-      <button type="submit"> Submit</button>
+      <button className= "Submit" type="submit"> Submit</button>
 
     </form>
   );

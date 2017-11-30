@@ -55,6 +55,8 @@ html, body {
 }
 
 .DietaryPref {
+display: flex;
+
 
 }
 .StressForm {
@@ -127,14 +129,31 @@ html, body {
 		font-size: 50px;
 		border: none;
 	}
+  .DietaryPref {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .Cool {
-  	width: 60%;
+  }
+  .DietaryPref input[type=checkbox]{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+  }
+  .Submit{
+    padding: 10px;
+    background-color: rgba(50, 158, 168, .8);
+    z-index: 2;
+  }
+  h2{
+    text-align: center;
+
   }
 }
-
+.Cool {
+  width: 60%;
+  display: flex;
+  justify-content: center;
 
 
 @keyframes bounce {
@@ -181,5 +200,25 @@ html, body {
 	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
+}
+.DietaryPref {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.DietaryPref input[type=checkbox]{
+  display: flex;
+  flex-direction: column;
+
+}
+.Submit{
+  padding: 10px;
+  background-color: rgba(50, 158, 168, .8);
+  z-index: 2;
+}
+h2{
+  text-align: center;
+
 }
 }
