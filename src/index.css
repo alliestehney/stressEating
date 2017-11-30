@@ -72,20 +72,20 @@ body {
 	margin: 2%;
 }
 
-.StressForm {
-text-align: center;
-width: 75%;
-margin: 0 auto;
-padding: 5%;
-margin-top: 15%;
-}
+	.StressForm {
+		text-align: center;
+		width: 75%;
+		margin: 0 auto;
+		padding: 5%;
+		margin-top: 15%;
+	}
 
-.StressLevelIcon {
-display: inline-block;
-background: none;
-font-size: 50px;
-border: none;
-}
+	.StressLevelIcon {
+		display: inline-block;
+		background: none;
+		font-size: 50px;
+		border: none;
+	}
 
 }
 
