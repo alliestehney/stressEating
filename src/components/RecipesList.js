@@ -6,7 +6,7 @@ class RecipesList extends Component {
     render() {
 
         return (
-            <ul className="RecipeList">
+            <ul className="RecipeList FlexContainer">
                 {this.props.recipes.map(recipe =>
                     <Recipe key={recipe.recipe.uri} recipe={recipe.recipe} />
                 )}

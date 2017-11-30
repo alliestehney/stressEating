@@ -8,7 +8,6 @@ class Recipe extends Component {
 		const recipe = this.props.recipe;
 
 		return(
-			<div className="FlexContainer">
 				<div className="RecipeCard">
 					<div className="RecipeTitle">{recipe.label}</div>
 					<img src={recipe.image} alt="recipe image"  />
@@ -16,7 +15,6 @@ class Recipe extends Component {
 						<li>{recipe.ingredientLines}</li>
 					</div>
 				</div>
-			</div>
 
 		);
 	}
