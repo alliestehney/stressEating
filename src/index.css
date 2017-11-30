@@ -195,17 +195,6 @@ ul {
 		font-size: 50px;
 		border: none;
 	}
-  .DietaryPref {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  }
-  .DietaryPref input[type=checkbox]{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .Submit{
     width:100%;
     padding: 10px;
@@ -230,6 +219,7 @@ ul {
   }
   .dietpref{
     display: flex;
+    flex-direction: row;
   }
 
   .Cool {
