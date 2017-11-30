@@ -26,11 +26,9 @@ console.log("Test");
         return Object.assign({}, state, {
 
             recipes: action.recipes,
-            currentComponent: "recipe_list",
-            dietaryRestrictions: action.dietaryRestrictions,
+            currentComponent: "recipe_list"
 
         });
-        console.log(action.dietaryRestrictions);
 
 		default:
 			return state;
