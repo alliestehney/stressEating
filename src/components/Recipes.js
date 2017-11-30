@@ -11,7 +11,7 @@ class Recipe extends Component {
 		return(
 				<div className="RecipeCard">
 					<div className="RecipeTitle">{recipe.label}</div>
-					<img src={recipe.image} alt="recipe image"  />
+					<img className="RecipeImage" src={recipe.image} alt="recipe image"  />
 					<div className="Ingredients">
 						{ingredientsList.map(ingredient => 
 							<li>{ingredient}</li>
