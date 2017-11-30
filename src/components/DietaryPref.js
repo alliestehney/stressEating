@@ -33,7 +33,7 @@ render() {
         <label><input type="checkbox" name="highprotein" checked={this.state.highprotein} onChange={this.handleInputChange.bind(this)}/> High Protein </label>
      </p>
 
-      <button type="submit"> Submit</button>
+      <button className= "Submit" type="submit"> Submit</button>
 
     </form>
   );
