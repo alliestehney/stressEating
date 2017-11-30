@@ -72,6 +72,27 @@ html, body {
   border: none;
 }
 
+
+.StressIcon {
+	list-style-type: none;
+}
+
+.StressLevelIcon:hover {
+	cursor: pointer;
+}
+
+
+.Cool {
+	width: 50px;
+}
+
+
+.Welcome {
+	font-weight: 100;
+	font-size: 3rem;
+}
+
+
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 	.FlexContainer {
@@ -107,6 +128,11 @@ html, body {
 		border: none;
 	}
 
+  .Cool {
+  	width: 60%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 
@@ -156,23 +182,4 @@ html, body {
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
 }
-}
-
-.StressIcon {
-	list-style-type: none;
-}
-
-.StressLevelIcon:hover {
-	cursor: pointer;
-}
-
-
-.Cool {
-	width: 25%;
-}
-
-
-.Welcome {
-	font-weight: 100;
-	font-size: 3rem;
 }
