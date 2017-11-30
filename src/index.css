@@ -112,11 +112,22 @@ display: flex;
   .DietaryPref {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+  }
+  .DietaryPref input[type=checkbox]{
+    display: flex;
+    flex-direction: column;
+
   }
   .Submit{
     padding: 10px;
     background-color: rgba(50, 158, 168, .8);
     z-index: 2;
+  }
+  h2{
+    text-align: center;
+
   }
 }
 
@@ -166,6 +177,26 @@ display: flex;
 	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
+}
+.DietaryPref {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.DietaryPref input[type=checkbox]{
+  display: flex;
+  flex-direction: column;
+
+}
+.Submit{
+  padding: 10px;
+  background-color: rgba(50, 158, 168, .8);
+  z-index: 2;
+}
+h2{
+  text-align: center;
+
 }
 }
 
