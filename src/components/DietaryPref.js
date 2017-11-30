@@ -22,18 +22,25 @@ class DietaryPref extends Component{
 render() {
   return(
     <form className = "DietaryPref" onSubmit={this.handleSubmit.bind(this)}>
+      <div className = "DietaryPref__heading">
       <h2>Dietary Preferences</h2>
-      <label className="Dietary__label"></label>
+    </div>
+      <div className="Desktop__DietPref">
       <p>
-        <label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label>
-        <label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegatarian </label>
-        <label><input type="checkbox" name="peanutfree" checked={this.state.peanutfree} onChange={this.handleInputChange.bind(this)}/> Peanut-Free </label>
-        <label><input type="checkbox" name="treenutfree" checked={this.state.treenutfree} onChange={this.handleInputChange.bind(this)}/> Tree-Nut-Free </label>
-        <label><input type="checkbox" name="lowcarb" checked={this.state.lowcarb} onChange={this.handleInputChange.bind(this)}/> Low-carb </label>
-        <label><input type="checkbox" name="highprotein" checked={this.state.highprotein} onChange={this.handleInputChange.bind(this)}/> High-Protein </label>
+        <div className = "Row1">
+        <span className = "dietpref"><label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label></span>
+        <span className = "dietpref"><label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegatarian </label></span>
+        <span className = "dietpref"><label><input type="checkbox" name="peanutfree" checked={this.state.peanutfree} onChange={this.handleInputChange.bind(this)}/> Peanut-Free </label></span>
+      </div>
+      <div className = "Row2">
+      <span className = "dietpref">  <label><input type="checkbox" name="treenutfree" checked={this.state.treenutfree} onChange={this.handleInputChange.bind(this)}/> Tree-Nut-Free </label></span>
+        <span className = "dietpref"><label><input type="checkbox" name="lowcarb" checked={this.state.lowcarb} onChange={this.handleInputChange.bind(this)}/> Low-carb </label></span>
+        <span className = "dietpref"><label><input type="checkbox" name="highprotein" checked={this.state.highprotein} onChange={this.handleInputChange.bind(this)}/> High-Protein </label></span>
+        </div>
      </p>
 
       <button className= "Submit" type="submit"> Submit</button>
+      </div>
 
     </form>
   );
