@@ -12,10 +12,10 @@ class DietaryPref extends Component{
     this.state = {
       vegan: false,
       vegetarian: false,
-      glutenfree: false,
-      nutfree: false,
-      dairyfree: false,
-      soyfree: false
+      peanutfree: false,
+      treenutfree: false,
+      lowcarb: false,
+      highprotein: false
     };
   }
 
@@ -27,10 +27,10 @@ render() {
       <p>
         <label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label>
         <label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegatarian </label>
-        <label><input type="checkbox" name="glutenfree" checked={this.state.glutenfree} onChange={this.handleInputChange.bind(this)}/> Gluten-Free </label>
-        <label><input type="checkbox" name="nutfree" checked={this.state.nutfree} onChange={this.handleInputChange.bind(this)}/> Nut-Free </label>
-        <label><input type="checkbox" name="dairyfree" checked={this.state.dairyfree} onChange={this.handleInputChange.bind(this)}/> Dairy-Free </label>
-        <label><input type="checkbox" name="soyfree" checked={this.state.soyfree} onChange={this.handleInputChange.bind(this)}/> Soy-Free </label>
+        <label><input type="checkbox" name="peanutfree" checked={this.state.peanutfree} onChange={this.handleInputChange.bind(this)}/> Peanut-Free </label>
+        <label><input type="checkbox" name="treenutfree" checked={this.state.treenutfree} onChange={this.handleInputChange.bind(this)}/> Tree-Nut-Free </label>
+        <label><input type="checkbox" name="lowcarb" checked={this.state.lowcarb} onChange={this.handleInputChange.bind(this)}/> Low carb </label>
+        <label><input type="checkbox" name="highprotein" checked={this.state.highprotein} onChange={this.handleInputChange.bind(this)}/> High Protein </label>
      </p>
 
       <button type="submit"> Submit</button>
@@ -68,17 +68,17 @@ render() {
         newRestrictions.push("vegetarian");
 
       }
-      if(this.state.glutenfree === true){
-        newRestrictions.push("glutenfree");
+      if(this.state.peanutfree === true){
+        newRestrictions.push("peanutfree");
       }
-      if(this.state.nutfree === true){
-        newRestrictions.push("nutfree");
+       if(this.state.treenutfree === true){
+        newRestrictions.push("treenutfree");
       }
-      if(this.state.dairyfree === true){
-        newRestrictions.push("dairyfree");
+       if(this.state.lowcarb === true){
+        newRestrictions.push("lowcarb");
       }
-      if(this.state.soyfree === true){
-        newRestrictions.push("soyfree");
+       if(this.state.highprotein === true){
+        newRestrictions.push("highprotein");
       }
 
       console.log(newRestrictions);

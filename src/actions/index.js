@@ -12,10 +12,10 @@ let high = "&ingr=5";
 
 let vegan = "&health=vegan";
 let vegetarian = "&health=vegetarian";
-let glutenfree = "&health=gluten-free";
-let nutfree = "&health=peanut-free&healthLabels=tree-nut-free";
-let dairyfree = "&health=dairy-free";
-let soyfree = "&health=soy-free";
+let peanutfree = "&health=peanut-free"
+let treenutfree = "&health=tree-nut-free"
+let lowcarb = "&diet=low-carb"
+let highprotein = "&deit=high-protein"
 
 export function fetchRecipes(dietaryRestrictions) {
     return function(dispatch, getState) {
@@ -36,6 +36,7 @@ export function fetchRecipes(dietaryRestrictions) {
             }
           if (diet[i] === 'vegan' && stressLevel === 'low') {
               url = baseURL + low + vegan;
+              console.log(url);
               }
 
           if (diet[i] === 'vegetarian' && stressLevel === 'medium') {
@@ -48,44 +49,48 @@ export function fetchRecipes(dietaryRestrictions) {
                 url = baseURL + low + vegetarian;
                 }
 
-          if (diet[i] === 'glutenfree' && stressLevel === 'medium') {
-                url = baseURL + medium + glutenfree;
+          if (diet[i] === 'highprotein' && stressLevel === 'medium') {
+                url = baseURL + medium + highprotein;
               }
-          if (diet[i] === 'glutenfree' && stressLevel === 'high') {
-                url = baseURL + high + glutenfree;
+          if (diet[i] === 'highprotein' && stressLevel === 'high') {
+                url = baseURL + high + highprotein;
               }
-          if (diet[i] === 'glutenfree' && stressLevel === 'low') {
-                url = baseURL + low + glutenfree;
+          if (diet[i] === 'highprotein' && stressLevel === 'low') {
+                url = baseURL + low + highprotein;
                 }
 
-          if (diet[i] === 'nutfree' && stressLevel === 'medium') {
-                url = baseURL + medium + nutfree;
+          if (diet[i] === 'peanutfree' && stressLevel === 'medium') {
+                url = baseURL + medium + peanutfree;
               }
-          if (diet[i] === 'nutfree' && stressLevel === 'high') {
-                url = baseURL + high + nutfree;
+          if (diet[i] === 'peanutfree' && stressLevel === 'high') {
+                url = baseURL + high + peanutfree;
               }
-          if (diet[i] === 'nutfree' && stressLevel === 'low') {
-                url = baseURL + low + nutfree;
+          if (diet[i] === 'peanutfree' && stressLevel === 'low') {
+                url = baseURL + low + peanutfree;
                 }
 
-          if (diet[i] === 'dairyfree' && stressLevel === 'medium') {
-                url = baseURL + medium + dairyfree;
+          if (diet[i] === 'treenutfree' && stressLevel === 'medium') {
+                console.log("IN THE DAIRY FREE IF STATEMENT");
+                url = baseURL + medium + treenutfree;
+                console.log("DAIRY URL: " + url);
               }
-          if (diet[i] === 'dairyfree' && stressLevel === 'high') {
-                url = baseURL + high + dairyfree;
+          if (diet[i] === 'treenutfree' && stressLevel === 'high') {
+                url = baseURL + high + treenutfree;
               }
-          if (diet[i] === 'dairyfree' && stressLevel === 'low') {
-                url = baseURL + low + dairyfree;
+          if (diet[i] === 'treenutfree' && stressLevel === 'low') {
+                console.log("IN THE DAIRY FREE IF STATEMENT");
+                url = baseURL + low + treenutfree;
+                console.log("DAIRY URL: " + url);
                 }
 
-          if (diet[i] === 'soyfree' && stressLevel === 'medium') {
-                url = baseURL + medium + soyfree;
+          if (diet[i] === 'lowcarb' && stressLevel === 'medium') {
+                url = baseURL + medium + lowcarb;
               }
-          if (diet[i] === 'soyfree' && stressLevel === 'high') {
-                url = baseURL + high + soyfree;
+          if (diet[i] === 'lowcarb' && stressLevel === 'high') {
+                url = baseURL + high + lowcarb;
               }
-          if (diet[i] === 'soyfree' && stressLevel === 'low') {
-                url = baseURL + low + soyfree;
+          if (diet[i] === 'lowcarb' && stressLevel === 'low') {
+                url = baseURL + low + lowcarb;
                 }
         }
 
