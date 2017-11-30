@@ -69,6 +69,7 @@ html, body {
 
 .DietaryPref {
 display: flex;
+justify-content: center;
 
 
 }
@@ -98,7 +99,7 @@ display: flex;
 
 
 .Cool {
-	width: 50px;
+	width: 40px;
 }
 
 
@@ -165,12 +166,24 @@ ul {
     text-align: center;
 
   }
+
+
+  .Cool {
+  	width: 70px;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .StressIcon {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+
+
+    }
 }
-.Cool {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-}
+
 
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
