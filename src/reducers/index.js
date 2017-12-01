@@ -29,13 +29,15 @@ export default function(state=INITIAL_STATE, action) {
             // when this action is called we want to add 3 more items from recipes into loading array
             console.log("Going into loading list action");
 
-            // const newLoadingArray = loading.slice(0);
-            // newLoadingArray.push(recipes[index-2], recipes[index-1], recipes[index]);
-            // index+=3;
+            const index = state.index;
+            const newLoadingArray = state.recipes.slice(0, index);
+            console.log("NEW LOADING ARRAY: ", newLoadingArray);
+            console.log("RECIPE ARRAY: ", state.recipes);
 
-            // return Object.assign({}, state, {
-            //     loading: newLoadingArray
-            // });
+            return Object.assign({}, state, {
+                 loading: newLoadingArray,
+                 index: index+3
+             });
 
 		default:
 			return state;

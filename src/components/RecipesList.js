@@ -12,7 +12,7 @@ class RecipesList extends Component {
         		<h2 className="RecipeListTitle">Recipe Suggestions</h2>
 	            <p className="RecipeTitleP">Because you indicated a {this.props.stressLevel} stress level, we think these recipes will best help you with your stress!</p>
 	            <ul className="RecipeList FlexContainer">
-	                {this.props.recipes.map(recipe =>
+	                {this.props.loading.map(recipe =>
 	                    <Recipe key={recipe.recipe.uri} recipe={recipe.recipe} />
 	                )}
 	            </ul>
