@@ -138,3 +138,9 @@ export function addDiet(dietaryRestrictions) {
     dietaryRestrictions
   };
 }
+
+export function createLoadingList() {
+  return {
+    type: "CREATE_LOADING_LIST"
+  }
+}
