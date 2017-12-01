@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Recipe from './Recipes';
 import { connect } from 'react-redux';
+import WatchForScroll from './ScrollActions';
 
 class RecipesList extends Component {
 
@@ -15,15 +16,20 @@ class RecipesList extends Component {
 	                    <Recipe key={recipe.recipe.uri} recipe={recipe.recipe} />
 	                )}
 	            </ul>
+	            <WatchForScroll />
+
 	        </div>
-        );
+	                );
     }
 
 }
 
 function mapStateToProps(state) {
 	return {
-		stressLevel: state.stressLevel
+		stressLevel: state.stressLevel,
+		recipes: state.recipes,
+		loading: state.loading,
+		isLoading: state.isLoading
 	}
 }
 

@@ -4,7 +4,8 @@ const INITIAL_STATE = {
 	currentComponent: "stress_form",
     recipes: [],
     loading: [], // array that will have 3 and then we add to it
-    isLoading: false
+    isLoading: false,
+    index: 2
 }
 
 export default function(state=INITIAL_STATE, action) {
@@ -24,6 +25,17 @@ export default function(state=INITIAL_STATE, action) {
                 recipes: action.recipes,
                 currentComponent: "recipe_list"
         });
+        case "CREATE_LOADING_LIST":
+            // when this action is called we want to add 3 more items from recipes into loading array
+            console.log("Going into loading list action");
+
+            // const newLoadingArray = loading.slice(0);
+            // newLoadingArray.push(recipes[index-2], recipes[index-1], recipes[index]);
+            // index+=3;
+
+            // return Object.assign({}, state, {
+            //     loading: newLoadingArray
+            // });
 
 		default:
 			return state;
