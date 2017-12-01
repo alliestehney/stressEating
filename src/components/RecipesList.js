@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Recipe from './Recipes';
+import { connect } from 'react-redux';
 
 class RecipesList extends Component {
 
@@ -8,7 +9,7 @@ class RecipesList extends Component {
         return (
         	<div className="recipesBackground">
         		<h2 className="RecipeListTitle">Recipe Suggestions</h2>
-	            <p className="RecipeTitleP">We've taken in your stress level and looked at your dietary restrictions to curate the best recipes for you. Don't worry, be happy!</p>
+	            <p className="RecipeTitleP">Because you indicated a {this.props.stressLevel} stress level, we think these recipes will best help you with your stress!</p>
 	            <ul className="RecipeList FlexContainer">
 	                {this.props.recipes.map(recipe =>
 	                    <Recipe key={recipe.recipe.uri} recipe={recipe.recipe} />
@@ -20,4 +21,10 @@ class RecipesList extends Component {
 
 }
 
-export default RecipesList;
+function mapStateToProps(state) {
+	return {
+		stressLevel: state.stressLevel
+	}
+}
+
+export default connect(mapStateToProps)(RecipesList);

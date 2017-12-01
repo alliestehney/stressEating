@@ -21,7 +21,7 @@ class App extends Component {
         );
     } else {
         return(
-          <RecipesList recipes={this.props.recipes}/>
+          <RecipesList recipes={this.props.recipes} stressLevel={this.props.stressLevel} />
       );
 
    }
