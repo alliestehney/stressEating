@@ -29,7 +29,7 @@ render() {
       <p>
         <div className = "Row1">
         <span className = "dietpref"><label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label></span>
-        <span className = "dietpref"><label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegatarian </label></span>
+        <span className = "dietpref"><label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegetarian </label></span>
         <span className = "dietpref"><label><input type="checkbox" name="peanutfree" checked={this.state.peanutfree} onChange={this.handleInputChange.bind(this)}/> Peanut-Free </label></span>
       </div>
       <div className = "Row2">

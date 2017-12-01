@@ -380,3 +380,10 @@ input[type=checkbox], label {
 label:hover, input[type=checkbox]:hover {
 	cursor: pointer;
 }
+.dietpref{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50%;
+  font-size: 25px;
+}
