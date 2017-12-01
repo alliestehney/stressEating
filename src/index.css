@@ -66,18 +66,14 @@ html, body {
 	flex-wrap: wrap;
 }
 
-.DietaryPref {
-display: flex;
-justify-content: center;
 
-
-}
 .StressForm {
   text-align: center;
   width: 75%;
   margin: 0 auto;
   padding: 5%;
   margin-top: 10%;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .StressLevelIcon {
@@ -99,6 +95,7 @@ justify-content: center;
 
 .StressLevelIcon:hover {
 	cursor: pointer;
+	outline: none;
 }
 
 
@@ -200,6 +197,7 @@ ul {
 		background: none;
 		font-size: 50px;
 		border: none;
+		outline: none;
 	}
   .Submit{
     width:100%;
@@ -292,12 +290,6 @@ ul {
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
 }
-.DietaryPref {
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-}
 /*.DietaryPref input[type=checkbox]{
   display: flex;
   flex-direction: column;
@@ -353,15 +345,33 @@ h2{
 .Desktop__DietPref{
   width: 400px;
   height: 500px;
+  margin: auto 34%;
 }
-h2{
-  text-align: center;
+
+.DietaryPref__heading h2 {
+	text-align: center;
+	font-weight: 200;
+	font-size: 3rem;
 }
+
 .Submit{
-  padding:15px;
+  padding:10px 20px;
   background-color: rgba(50, 158, 168, .8);
+  margin: auto 41%;
+  color: white;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
+  margin-top: 3%;
+  font-size: 0.9rem;
+  outline: none;
 
 }
+
+.Submit:hover {
+	cursor: pointer;
+	background-color: rgba(50, 158, 168, .2);
+}
+
 .Row1{
   display: flex;
   justify-content: space-around;
@@ -371,4 +381,12 @@ h2{
   display: flex;
   justify-content: space-around;
 
+}
+
+input, label {
+	font-size: 1.2rem;
+}
+
+label:hover, input:hover {
+	cursor: pointer;
 }
