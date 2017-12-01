@@ -126,6 +126,24 @@ ul {
 	font-size: 1.2rem;
 }
 
+.Submit{
+  padding:10px 20px;
+  background-color: rgba(50, 158, 168, .8);
+  margin: auto 41%;
+  color: white;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
+  margin-top: 3%;
+  font-size: 0.9rem;
+  outline: none;
+
+}
+
+.Submit:hover {
+	cursor: pointer;
+	background-color: rgba(50, 158, 168, .2);
+}
+
 
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -208,6 +226,7 @@ ul {
     padding: 10px;
     background-color: rgba(50, 158, 168, .8);
     z-index: 2;
+    margin-left: -34%;
   }
   h2{
     text-align: center;
@@ -341,24 +360,6 @@ h2{
 	text-align: center;
 	font-weight: 200;
 	font-size: 3rem;
-}
-
-.Submit{
-  padding:10px 20px;
-  background-color: rgba(50, 158, 168, .8);
-  margin: auto 41%;
-  color: white;
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 400;
-  margin-top: 3%;
-  font-size: 0.9rem;
-  outline: none;
-
-}
-
-.Submit:hover {
-	cursor: pointer;
-	background-color: rgba(50, 158, 168, .2);
 }
 
 .Row1{
