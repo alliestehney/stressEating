@@ -31,7 +31,6 @@ html, body {
 
 }
 
-
 .RecipeTitle {
 	padding-bottom: 5%;
 	font-size: 1.5rem;
@@ -51,6 +50,7 @@ html, body {
 	margin-top: 5%;
 	font-weight: 300;
 }
+
 
 .RecipesBackground {
 	background-image: url("/backgroundImage2.jpg");
@@ -341,6 +341,7 @@ ul {
 h2{
   text-align: center;
 
+
 }
 .Cool {
   width: 50px;
@@ -350,33 +351,36 @@ h2{
 
 
 }
-.Desktop__DietPref{
-  width: 400px;
-  height: 500px;
-  margin: auto 34%;
-}
-
-.DietaryPref__heading h2 {
-	text-align: center;
-	font-weight: 200;
-	font-size: 3rem;
-}
 
 .Row1{
   display: flex;
   justify-content: space-around;
+  padding-top: 10px;
+
 
 }
 .Row2{
   display: flex;
   justify-content: space-around;
+  padding-top: 10px;
+
 
 }
 
 input[type=checkbox], label {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
+
 }
 
 label:hover, input[type=checkbox]:hover {
 	cursor: pointer;
+}
+.DietaryPref{
+  background-color: rgba(0,0,0,0.2);
+  width: 57%;
+  margin-left: 25%;
+  align-content: center;
+  text-align: center;
+  margin-top: 20%;
+
 }

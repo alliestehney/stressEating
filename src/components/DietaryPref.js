@@ -27,6 +27,7 @@ render() {
         </div>
       <div className="Desktop__DietPref">
       <p>
+        <div className= "BothRows">
         <div className = "Row1">
         <span className = "dietpref"><label><input type="checkbox" name="vegan" checked={this.state.vegan} onChange={this.handleInputChange.bind(this)}/> Vegan </label></span>
         <span className = "dietpref"><label><input type="checkbox" name="vegetarian" checked={this.state.vegetarian} onChange={this.handleInputChange.bind(this)}/> Vegetarian </label></span>
@@ -36,6 +37,7 @@ render() {
       <span className = "dietpref">  <label><input type="checkbox" name="treenutfree" checked={this.state.treenutfree} onChange={this.handleInputChange.bind(this)}/> Tree-Nut-Free </label></span>
         <span className = "dietpref"><label><input type="checkbox" name="lowcarb" checked={this.state.lowcarb} onChange={this.handleInputChange.bind(this)}/> Low-carb </label></span>
         <span className = "dietpref"><label><input type="checkbox" name="highprotein" checked={this.state.highprotein} onChange={this.handleInputChange.bind(this)}/> High-Protein </label></span>
+        </div>
         </div>
      </p>
 
