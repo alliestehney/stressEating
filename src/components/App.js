@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DietaryPref from './DietaryPref';
 import StressLevel from './StressLevel';
 import Recipe from "./Recipes";
+import WatchForScroll from "./ScrollActions";
 import { connect } from 'react-redux';
 import { showDietaryForm } from '../actions';
 import { showRecipes } from '../actions';
@@ -25,6 +26,7 @@ class App extends Component {
       );
 
    }
+   <WatchForScroll />
 }
 }
 
