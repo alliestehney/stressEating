@@ -351,24 +351,7 @@ h2{
 
 
 }
-/*.Desktop__DietPref{
-  width: 400px;
-  height: 500px;
-  margin: auto 34%;
-  margin-top: 10%;
-  font-size: 3em;
-  font-weight: 400;
-}
 
-.DietaryPref__heading h2 {
-	text-align: center;
-	font-weight: 200;
-	font-size: 3rem;
-}*/
-/*.BothRows{
-  display: flex;
-  justify-content: space-around;
-}*/
 .Row1{
   display: flex;
   justify-content: space-around;
