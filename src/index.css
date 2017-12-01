@@ -204,7 +204,7 @@ ul {
 		outline: none;
 	}
   .Submit{
-    width:100%;
+    width:100% !important;
     padding: 10px;
     background-color: rgba(50, 158, 168, .8);
     z-index: 2;
@@ -246,7 +246,7 @@ ul {
     ul {
 		margin-left: -11%;
 	}
-}
+} /*end of mobile*/
 
 
 @keyframes bounce {
@@ -294,28 +294,13 @@ ul {
 	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 	margin: 2%;
 }
-/*.DietaryPref input[type=checkbox]{
-  display: flex;
-  flex-direction: column;
 
-}
-.DietaryPref {
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-}
-.DietaryPref input[type=checkbox]{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}*/
-.Submit{
+/*.Submit{
   width:100%;
   padding: 10px;
   background-color: rgba(50, 158, 168, .8);
   z-index: 2;
-}
+}*/
 
 .Row1{
   display: flex;
@@ -329,11 +314,11 @@ justify-content: center;
   flex-direction: column;
   justify-content: center;
 }
-.Submit{
+/*.Submit{
   padding: 10px;
   background-color: rgba(50, 158, 168, .8);
   z-index: 2;
-}
+}*/
 h2{
   text-align: center;
 
@@ -387,10 +372,10 @@ h2{
 
 }
 
-input, label {
+input[type=checkbox], label {
 	font-size: 1.2rem;
 }
 
-label:hover, input:hover {
+label:hover, input[type=checkbox]:hover {
 	cursor: pointer;
 }
