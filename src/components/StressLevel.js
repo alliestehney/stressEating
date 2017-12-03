@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { showDietaryForm } from '../actions';
 
 class StressLevel extends Component {
 

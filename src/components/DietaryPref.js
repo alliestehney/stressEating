@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { receiveRecipes } from '../actions';
-import { showRecipes } from '../actions';
 import { fetchRecipes } from '../actions';
 
 
@@ -98,8 +96,9 @@ render() {
     }
 
 }
+
 const mapActionsToProps = {
-onSubmit: fetchRecipes
+  onSubmit: fetchRecipes
 }
 
 export default connect (null, mapActionsToProps)(DietaryPref);

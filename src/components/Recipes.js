@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 
 class Recipe extends Component {
@@ -11,7 +10,7 @@ class Recipe extends Component {
 		return(
 				<div className="RecipeCard">
 					<div className="RecipeTitle">{recipe.label}</div>
-					<img className="RecipeImage" src={recipe.image} alt="recipe image"  />
+					<img className="RecipeImage" src={recipe.image} alt="recipe details"  />
 					<div className="Ingredients">
 					<div className="RecipeLink"> <a href={recipe.url}>Let's make this!</a></div>
 						{ingredientsList.map(ingredient =>
