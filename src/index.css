@@ -70,6 +70,9 @@ html, body {
 	flex-wrap: wrap;
 }
 
+.stressInline {
+	font-weight: 700;
+}
 
 .StressForm {
   text-align: center;
