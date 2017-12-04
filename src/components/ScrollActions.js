@@ -36,11 +36,11 @@ class WatchForScroll extends Component {
 		console.log("PIXELS FROM BOTTOM: ", document.body.clientHeight - (window.pageYOffset + window.innerHeight) );
 		var pixelsFromBottom = document.body.clientHeight - (window.pageYOffset + window.innerHeight);
 		// if 200px from bottom, add more content
-		if (pixelsFromBottom <= 300) {
+		if (pixelsFromBottom <= 600) {
 			// call loading action
 			this.props.createLoadingList();
 
-		}
+		 }
 	
 	}
 
