@@ -47,7 +47,8 @@ const mapActionsToProps = {
   showDietaryForm,
   receiveRecipes,
   showCookOrBuy,
-  receiveRestaurants
+  receiveRestaurants,
+  
 }
 
 
