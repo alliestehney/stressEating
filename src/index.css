@@ -39,6 +39,10 @@ html, body {
 	height: 7%;
 }
 
+.RecipeList img {
+	margin-left: -1%;
+}
+
 .Ingredients li {
 	list-style-type: none;
 	margin-bottom: 2%;
@@ -375,6 +379,7 @@ input[type=checkbox], label {
 label:hover, input[type=checkbox]:hover {
 	cursor: pointer;
 }
+
 .DietaryPref{
   background-color: rgba(0,0,0,0.2);
   width: 57%;
@@ -383,4 +388,16 @@ label:hover, input[type=checkbox]:hover {
   text-align: center;
   margin-top: 20%;
 
+}
+
+.RecipeLink a {
+	text-decoration: none;
+	font-weight: 400;
+	color: black;
+	margin-top: 4%;
+}
+
+.RecipeLink:hover {
+	cursor: mouse;
+	color: #D3D3D3;
 }
