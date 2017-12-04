@@ -20,9 +20,7 @@ class DietaryPref extends Component{
 render() {
   return(
     <form className = "DietaryPref" onSubmit={this.handleSubmit.bind(this)}>
-        <div className = "DietaryPref__heading">
-          <h2>Dietary Preferences</h2>
-        </div>
+          <h2 className="TITLE">Dietary Preferences</h2>
       <div className="Desktop__DietPref">
 
         <div className= "BothRows">
@@ -39,7 +37,7 @@ render() {
         </div>
      
       </div>
-      <button className="Submit" type="submit"> SUBMIT</button>
+      <button className="Submit" type="submit">SUBMIT</button>
     </form>
   );
   }
