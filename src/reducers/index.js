@@ -55,7 +55,7 @@ export default function(state=INITIAL_STATE, action) {
                 currentComponent: "restaurants"
         });
         case "SHOW_RESTAURANTS":
-        console.log("showing Rest");
+      
            return Object.assign({}, state, {
              cookorbuy:action.cookorbuy,
              currentComponent:"restaurants"
