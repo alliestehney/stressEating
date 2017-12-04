@@ -22,7 +22,7 @@ class App extends Component {
       );
     } else if(this.props.currentComponent === "cook_or_buy") {
       return (
-        <CookOrBuy  onClick= {this.props.showDietaryForm}/>
+        <CookOrBuy />
       )
     } else if(this.props.currentComponent === "restaurants") {
       return (
