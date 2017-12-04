@@ -105,7 +105,8 @@ export function fetchRecipes(dietaryRestrictions) {
 export function fetchRestaurants() {
   return function(dispatch) {
     dispatch(requestRestaurants());
-    $.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.3314,-83.0458&radius=500&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY", function(data){
+    $.get("/getdata", function(data){
+      console.log("DATA: ", data);
       const restaurants = data.results;
       dispatch(receiveRestaurants(restaurants));
       console.log(restaurants);

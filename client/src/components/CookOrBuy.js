@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchRestaurants,showDietaryForm,showRestaurants } from "../actions";
+import { fetchRestaurants,showDietaryForm } from "../actions";
 
 
 class CookOrBuy extends Component {
@@ -14,11 +14,11 @@ class CookOrBuy extends Component {
             <ul className="BuyGuide" >
 
                 <div className="iconGrouping" onClick= {this.props.showDietaryForm.bind(this)}>
-                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <i className="fa fa-home" aria-hidden="true"></i>
                     <button className="Cook" type="button" value="cook">COOK AT HOME</button>
                 </div>
                 <div className="iconGrouping" onClick= {this.props.fetchRestaurants.bind(this)}>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <i className="fa fa-map-marker" aria-hidden="true"></i>
                     <button className="GoOut" type="button" value="goOut">GO OUT</button>
                 </div>
             </ul>
