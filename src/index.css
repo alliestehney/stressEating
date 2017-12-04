@@ -304,7 +304,7 @@ ul {
 			margin-top: 20% !important;
 		}
 
-		.DietaryPref h2 {
+		.DietaryPref h2, .TITLE {
 			font-size: 2rem;
 			font-weight: 200;
 		}
@@ -327,6 +327,44 @@ ul {
 			outline: none;
 			margin-top: 5%;
 		}
+
+		.BuyGuide {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.iconGrouping {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: auto;
+			padding: 7% 2%;
+		}
+
+		.iconGrouping i {
+			font-size: 3rem;
+		}
+
+		.iconGrouping button {
+			color: white;
+			font-size: 1rem;
+			margin-top: 5%;
+			font-family: 'Yantramanav', sans-serif;
+  			font-weight: 500;
+		}
+
+		.CookOrBuy .Title {
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+
+		.CookOrBuy {
+			background-color: rgba(0,0,0,0.2);
+    		margin: 0% 8%;
+    		margin-top: 15%;
+    		padding-bottom: 40%;
+		}
+
 } /*end of mobile*/
 
 
