@@ -13,7 +13,7 @@ class CookOrBuy extends Component {
             <h1 className="">Would you like to cook or go out?</h1>
             <ul className="BuyGuide" >
             <button className="Cook" type="button" value="cook" onClick= {this.props.showDietaryForm.bind(this)}>I want to cook</button>
-            <button className="GoOut" type="button" value="goOut" onClick= {this.props.showRestaurants.bind(this)}>I want to go out</button>
+            <button className="GoOut" type="button" value="goOut" onClick= {this.props.fetchRestaurants.bind(this)}>I want to go out</button>
 
             </ul>
           </div>
@@ -21,13 +21,14 @@ class CookOrBuy extends Component {
         );
       }
 
-      
+
 
 }
 
 const mapActionsToProps = {
   showDietaryForm,
-  showRestaurants
+  showRestaurants,
+  fetchRestaurants
 
 }
 

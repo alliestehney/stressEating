@@ -125,11 +125,10 @@ export function showRestaurants(cookorbuy) {
   };
 }
 
-export function receiveRestaurants(restaurants) {
-    console.log("whatsup");
+export function receiveRestaurants(fetchRestaurants) {
     return {
         type: "RECEIVE_RESTAURANTS",
-        restaurants
+        fetchRestaurants
     }
 }
 
