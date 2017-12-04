@@ -2,7 +2,6 @@ const INITIAL_STATE = {
     stressLevel: "",
     dietaryRestrictions: [],
 	currentComponent: "stress_form",
-  cookorbuy: "",
     recipes: [],
     loading: [], // array that will have 3 and then we add to it
     isLoading: false,
