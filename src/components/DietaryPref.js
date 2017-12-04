@@ -38,10 +38,8 @@ render() {
         </div>
         </div>
      
-
-      <button className= "Submit" type="submit"> SUBMIT</button>
       </div>
-
+      <button className="Submit" type="submit"> SUBMIT</button>
     </form>
   );
   }
