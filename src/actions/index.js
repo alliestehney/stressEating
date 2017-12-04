@@ -36,7 +36,6 @@ export function fetchRecipes(dietaryRestrictions) {
             }
           if (diet[i] === 'vegan' && stressLevel === 'low') {
               url = baseURL + low + vegan;
-              console.log(url);
               }
 
           if (diet[i] === 'vegetarian' && stressLevel === 'medium') {
@@ -70,17 +69,13 @@ export function fetchRecipes(dietaryRestrictions) {
                 }
 
           if (diet[i] === 'treenutfree' && stressLevel === 'medium') {
-                console.log("IN THE DAIRY FREE IF STATEMENT");
                 url = baseURL + medium + treenutfree;
-                console.log("DAIRY URL: " + url);
               }
           if (diet[i] === 'treenutfree' && stressLevel === 'high') {
                 url = baseURL + high + treenutfree;
               }
           if (diet[i] === 'treenutfree' && stressLevel === 'low') {
-                console.log("IN THE DAIRY FREE IF STATEMENT");
                 url = baseURL + low + treenutfree;
-                console.log("DAIRY URL: " + url);
                 }
 
           if (diet[i] === 'lowcarb' && stressLevel === 'medium') {
