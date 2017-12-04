@@ -17,7 +17,7 @@ class CookOrBuy extends Component {
                     <i class="fa fa-home" aria-hidden="true"></i>
                     <button className="Cook" type="button" value="cook">COOK AT HOME</button>
                 </div>
-                <div className="iconGrouping" onClick= {this.props.showRestaurants.bind(this)}>
+                <div className="iconGrouping" onClick= {this.props.fetchRestaurants.bind(this)}>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <button className="GoOut" type="button" value="goOut">GO OUT</button>
                 </div>
@@ -33,7 +33,7 @@ class CookOrBuy extends Component {
 
 const mapActionsToProps = {
   showDietaryForm,
-  showRestaurants
+  fetchRestaurants
 
 
 }

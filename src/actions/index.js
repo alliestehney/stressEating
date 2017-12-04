@@ -109,7 +109,8 @@ export function fetchRestaurants() {
       const restaurants = data.results;
       dispatch(receiveRestaurants(restaurants));
       console.log(restaurants);
-    })
+    });
+    dispatch(showRestaurants());
   }
 }
 
@@ -118,8 +119,7 @@ export function requestRestaurants() {
         type: "REQUEST_RESTAURANTS"
     }
 }
-export function showRestaurants(dispatch, cookorbuy) {
-  dispatch(fetchRestaurants());
+export function showRestaurants(cookorbuy) {
   return {
     type: "SHOW_RESTAURANTS",
     cookorbuy
