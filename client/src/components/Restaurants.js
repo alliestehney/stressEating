@@ -7,7 +7,7 @@ class Restaurants extends Component {
 
         return (
 
-        		<h2 className="RecipeListTitle">Restaurants Near You</h2>
+        	<h2 className="RecipeListTitle">Restaurants Near You</h2>
           );
     }
 
