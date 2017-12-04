@@ -215,6 +215,19 @@ ul {
 	  	background-repeat: no-repeat;
 	}
 
+	.RecipeListTitle {
+		font-size: 2rem;
+	}
+
+	.RecipeTitleP {
+		font-size: 1rem;
+		margin: 2% 10%;
+		font-weight: 300;
+	}
+
+	.stressInline {
+		font-weight: 700;
+	}
 
 	.StressForm {
 		text-align: center;
