@@ -4,7 +4,7 @@ import $ from 'jquery-ajax';
 // url with default argument. If called without an argument (as in index.js), it
 // will default to the main URL.
 
-const baseURL = "https://api.edamam.com/search?q=snack&app_id=897ca38f&app_key=33c0d8147fe73cdb547a8cdc6b8e4008&from=0&to=24&calories=lte500&diet=balanced"
+const baseURL = "https://api.edamam.com/search?q=snack&app_id=897ca38freq&app_key=33c0d8147fe73cdb547a8cdc6b8e4008&from=0&to=24&calories=lte500&diet=balanced"
 //URL param's based on stress Level (low has no params)
 let low = "&ingr=20";
 let medium = "&ingr=8";
@@ -125,10 +125,10 @@ export function showRestaurants(cookorbuy) {
   };
 }
 
-export function receiveRestaurants(fetchRestaurants) {
+export function receiveRestaurants(restaurants) {
     return {
         type: "RECEIVE_RESTAURANTS",
-        fetchRestaurants
+        restaurants
     }
 }
 
