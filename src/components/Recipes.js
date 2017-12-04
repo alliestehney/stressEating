@@ -8,7 +8,7 @@ class Recipe extends Component {
 		const ingredientsList = recipe.ingredientLines;
 
 		return(
-				<div className="RecipeCard">
+				<div className="animated fadeInUp RecipeCard">
 					<div className="RecipeTitle">{recipe.label}</div>
 					<img className="RecipeImage" src={recipe.image} alt="recipe details"  />
 					<div className="Ingredients">
