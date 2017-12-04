@@ -6,7 +6,7 @@ const INITIAL_STATE = {
     recipes: [],
     loading: [], // array that will have 3 and then we add to it
     isLoading: false,
-    index: 2,
+    index: 5,
     restaurants: []
 }
 

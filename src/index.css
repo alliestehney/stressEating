@@ -365,54 +365,54 @@ ul {
 	}
 
 	.RecipeCard {
-	text-align: center;
-	width: 80%;
-	/*margin: 0 30%;*/
-	padding: 3% 0;
-	background-color: #66b1d6;
-	-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
-	-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
-	box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
-	margin: 2%;
-}
+		text-align: center;
+		width: 80%;
+		/*margin: 0 30%;*/
+		padding: 3% 0;
+		background-color: #66b1d6;
+		-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+		-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+		box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
+		margin: 2%;
+	}
 
-/*.Submit{
-  width:100%;
-  padding: 10px;
-  background-color: rgba(50, 158, 168, .8);
-  z-index: 2;
-}*/
+	.Row1{
+	  display: flex;
+	  justify-content: space-around;
+	  flex-direction: column;
+	  justify-content: center;
+	}
 
-.Row1{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  justify-content: center;
-}
-.Row2{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  justify-content: center;
-}
-/*.Submit{
-  padding: 10px;
-  background-color: rgba(50, 158, 168, .8);
-  z-index: 2;
-}*/
-h2{
-  text-align: center;
+	.Row2{
+	  display: flex;
+	  justify-content: space-around;
+	  flex-direction: column;
+	  justify-content: center;
+	}
+
+	h2{
+	  text-align: center;
 
 
-}
-.Cool {
-  width: 50px;
-  justify-content: center;
-  padding-bottom: 10px;
-}
+	}
+
+	.Cool {
+	  width: 50px;
+	  justify-content: center;
+	  padding-bottom: 10px;
+	}
+
+	.StressForm {
+		padding-bottom: 39%;
+		height: 100%;
+	}
+
+	.StressIcon {
+		flex-direction: column;
+	}
 
 
-}
+} /*end of tablet view*/
 
 .Row1{
   display: flex;
