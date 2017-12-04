@@ -118,6 +118,13 @@ export function requestRestaurants() {
         type: "REQUEST_RESTAURANTS"
     }
 }
+export function showRestaurants(cookorbuy) {
+  return {
+    type: "SHOW_RESTAURANTS",
+    cookorbuy
+  };
+}
+
 export function receiveRestaurants(restaurants) {
     console.log("whatsup");
     return {

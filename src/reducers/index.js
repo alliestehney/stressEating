@@ -6,7 +6,7 @@ const INITIAL_STATE = {
     recipes: [],
     loading: [], // array that will have 3 and then we add to it
     isLoading: false,
-    index: 5,
+    index: 6,
     restaurants: []
 }
 
@@ -54,6 +54,12 @@ export default function(state=INITIAL_STATE, action) {
             return Object.assign({}, state, {
                 restaurants: action.restaurants,
                 currentComponent: "restaurants"
+        });
+        case "SHOW_RESTAURANTS":
+        console.log("showing Rest");
+           return Object.assign({}, state, {
+             cookorbuy:action.cookorbuy,
+             currentComponent:"restaurants"
         });
 
 		default:

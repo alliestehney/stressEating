@@ -24,7 +24,7 @@ class App extends Component {
       return (
         <CookOrBuy  onClick= {this.props.showDietaryForm}/>
       )
-    } else if(this.props.cookorbuy === "goOut") {
+    } else if(this.props.currentComponent === "restaurants") {
       return (
         <Restaurants />
       )
