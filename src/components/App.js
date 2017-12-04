@@ -9,6 +9,7 @@ import RecipesList from "./RecipesList";
 import { receiveRecipes } from "../actions";
 import CookOrBuy from "./CookOrBuy";
 import { showCookOrBuy } from "../actions";
+import Restaurants from "./Restaurants";
 
 class App extends Component {
   render() {
@@ -21,7 +22,13 @@ class App extends Component {
       return (
         <CookOrBuy  onClick= {this.props.showDietaryForm}/>
       )
+    } else if(this.props.cookorbuy === "goOut") {
+      return (
+        <Restaurants />
+      )
     }
+
+
     else if(this.props.currentComponent === "dietary_restrictions"){
         return (
           <DietaryPref />
