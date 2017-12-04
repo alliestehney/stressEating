@@ -107,8 +107,8 @@ export function fetchRestaurants() {
     dispatch(requestRestaurants());
     $.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.3314,-83.0458&radius=500&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY", function(data){
       const restaurants = data.results;
-        dispatch(receiveRestaurants(restaurants));
-        console.log(restaurants);
+      dispatch(receiveRestaurants(restaurants));
+      console.log(restaurants);
     })
   }
 }
@@ -118,7 +118,8 @@ export function requestRestaurants() {
         type: "REQUEST_RESTAURANTS"
     }
 }
-export function showRestaurants(cookorbuy) {
+export function showRestaurants(dispatch, cookorbuy) {
+  dispatch(fetchRestaurants());
   return {
     type: "SHOW_RESTAURANTS",
     cookorbuy
