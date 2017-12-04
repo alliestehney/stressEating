@@ -10,6 +10,7 @@ import { receiveRecipes } from "../actions";
 import CookOrBuy from "./CookOrBuy";
 import { showCookOrBuy } from "../actions";
 import Restaurants from "./Restaurants";
+import { createLoadingList } from "../actions";
 
 class App extends Component {
   render() {

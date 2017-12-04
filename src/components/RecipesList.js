@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import Recipe from './Recipes';
 import { connect } from 'react-redux';
 import WatchForScroll from './ScrollActions';
+import { createLoadingList } from '../actions';
 
 class RecipesList extends Component {
+
+	componentDidMount() {
+		this.props.createLoadingList();
+	}
 
     render() {
 
@@ -33,4 +38,8 @@ function mapStateToProps(state) {
 	}
 }
 
-export default connect(mapStateToProps)(RecipesList);
+const mapActionsToProps = {
+	createLoadingList
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(RecipesList);
