@@ -148,6 +148,16 @@ ul {
 	background-color: rgba(50, 158, 168, .2);
 }
 
+.DietaryPref{
+  background-color: rgba(0,0,0,0.2);
+  width: 57%;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 6%;
+
+}
+
 
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -215,7 +225,7 @@ ul {
 	}
 
 	.Welcome {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.StressLevelIcon {
@@ -225,50 +235,82 @@ ul {
 		border: none;
 		outline: none;
 	}
-  .Submit{
-    width:100% !important;
-    padding: 10px;
-    background-color: rgba(50, 158, 168, .8);
-    z-index: 2;
-    margin-left: -34%;
-  }
-  h2{
-    text-align: center;
-
-  }
-  .Row1{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .Row2{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .dietpref{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .Cool {
-  	width: 70px;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-
-  .StressIcon {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    justify-content: space-between;
-    }
-
-    ul {
-		margin-left: -11%;
+	
+	.Submit{
+	    width:100% !important;
+	    padding: 10px;
+	    background-color: rgba(50, 158, 168, .8);
+	    z-index: 2;
+	    margin-left: -34%;
 	}
+	h2{
+	    text-align: center;
+
+	}
+	.Row1{
+	    display: flex;
+	    justify-content: space-around;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	.Row2{
+	    display: flex;
+	    justify-content: space-around;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	  .dietpref{
+	    display: flex;
+	    flex-direction: row;
+	  }
+
+	  .Cool {
+	  	width: 70px;
+	    justify-content: center;
+	    padding-bottom: 10px;
+	  }
+
+	  .StressIcon {
+	    display: flex;
+	    flex-direction: column;
+	    padding: 10px;
+	    justify-content: space-between;
+	    }
+
+	    ul {
+			margin-left: -11%;
+		}
+
+		.DietaryPref {
+			background-color: rgba(0,0,0,0.2) !important;
+			width: 75% !important;
+			margin-left: 12.5% !important;
+			margin-top: 20% !important;
+		}
+
+		.DietaryPref h2 {
+			font-size: 2rem;
+			font-weight: 200;
+		}
+
+		.dietpref label {
+			font-size: 1.7rem;
+		}
+
+		.Row1 {
+			padding-bottom: 0 !important;
+		}
+
+		.Row2 {
+			padding-top: 0 !important;
+		}
+
+		.Submit {
+			margin: auto;
+			border: none;
+			outline: none;
+			margin-top: 5%;
+		}
 } /*end of mobile*/
 
 
@@ -378,16 +420,6 @@ input[type=checkbox], label {
 
 label:hover, input[type=checkbox]:hover {
 	cursor: pointer;
-}
-
-.DietaryPref{
-  background-color: rgba(0,0,0,0.2);
-  width: 57%;
-  margin-left: 25%;
-  align-content: center;
-  text-align: center;
-  margin-top: 20%;
-
 }
 
 .RecipeLink a {

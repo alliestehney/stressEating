@@ -8,7 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import reducer from './reducers';
-import { fetchRecipes } from './actions';
+// import { fetchRecipes } from './actions';
 import thunkMiddleware from 'redux-thunk';
 
 
