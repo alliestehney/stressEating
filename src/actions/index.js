@@ -120,9 +120,16 @@ export function receiveRecipes(recipes, dietaryRestrictions) {
     }
 }
 
-export function showDietaryForm(stressLevel) {
+export function showDietaryForm(cookorbuy) {
   return {
     type: "SHOW_DIETARY_FORM",
+    cookorbuy
+  };
+}
+
+export function showCookOrBuy(stressLevel) {
+  return {
+    type: "SHOW_COOK_OR_BUY",
     stressLevel
   };
 }
