@@ -100,11 +100,37 @@ export function fetchRecipes(dietaryRestrictions) {
             const recipes = data.hits;
             // const prevPageUrl = data.previous;
             // const nextPageUrl = data.next;
-            
+
             dispatch(receiveRecipes(recipes));
         });
     }
 }
+
+
+export function fetchRestaurants() {
+  return function(dispatch) {
+    dispatch(requestRestaurants());
+    $.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.3314,-83.0458&radius=500&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY", function(data){
+      const restaurants = data.results;
+        dispatch(receiveRestaurants(restaurants));
+        console.log(restaurants);
+    })
+  }
+}
+
+export function requestRestaurants() {
+    return {
+        type: "REQUEST_RESTAURANTS"
+    }
+}
+export function receiveRestaurants(restaurants) {
+    console.log("whatsup");
+    return {
+        type: "RECEIVE_RESTAURANTS",
+        restaurants
+    }
+}
+
 
 export function requestRecipes() {
     return {

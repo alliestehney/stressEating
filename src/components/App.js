@@ -10,7 +10,8 @@ import { receiveRecipes } from "../actions";
 import CookOrBuy from "./CookOrBuy";
 import { showCookOrBuy } from "../actions";
 import Restaurants from "./Restaurants";
-import { createLoadingList } from "../actions";
+import { receiveRestaurants } from "../actions";
+
 
 class App extends Component {
   render() {
@@ -29,7 +30,6 @@ class App extends Component {
       )
     }
 
-
     else if(this.props.currentComponent === "dietary_restrictions"){
         return (
           <DietaryPref />
@@ -46,7 +46,8 @@ class App extends Component {
 const mapActionsToProps = {
   showDietaryForm,
   receiveRecipes,
-  showCookOrBuy
+  showCookOrBuy,
+  receiveRestaurants
 }
 
 

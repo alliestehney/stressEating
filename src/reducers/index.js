@@ -2,18 +2,18 @@ const INITIAL_STATE = {
     stressLevel: "",
     dietaryRestrictions: [],
 	currentComponent: "stress_form",
-    cookorbuy: "",
+  cookorbuy: "",
     recipes: [],
     loading: [], // array that will have 3 and then we add to it
     isLoading: false,
-    index: 6
+    index: 2,
+    restaurants: []
 }
 
 export default function(state=INITIAL_STATE, action) {
 	switch(action.type) {
 		case "SHOW_DIETARY_FORM":
 			 return Object.assign({}, state, {
-				  // stressLevel: action.stressLevel,
           cookorbuy: action.cookorbuy,
 				  currentComponent: "dietary_restrictions"
 		});
@@ -41,11 +41,20 @@ export default function(state=INITIAL_STATE, action) {
                  index: index+3
              });
        case "SHOW_COOK_OR_BUY":
-            console.log("this is sorta working");
             return Object.assign({}, state, {
-				    stressLevel: action.stressLevel,
-		          currentComponent: "cook_or_buy"
+				          stressLevel: action.stressLevel,
+		              currentComponent: "cook_or_buy"
               });
+        case "REQUEST_RESTAURANTS":
+           return Object.assign({}, state, {
+        });
+
+        case "RECEIVE_RESTAURANTS":
+            console.log("seeee if restaurants come");
+            return Object.assign({}, state, {
+                restaurants: action.restaurants,
+                currentComponent: "restaurants"
+        });
 
 		default:
 			return state;

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchRestaurants } from "../actions"
 
 class CookOrBuy extends Component {
 
@@ -31,6 +33,8 @@ class CookOrBuy extends Component {
       }
 
 }
+
+
 
 
 export default CookOrBuy;
