@@ -34,7 +34,8 @@ function mapStateToProps(state) {
 		stressLevel: state.stressLevel,
 		recipes: state.recipes,
 		loading: state.loading,
-		isLoading: state.isLoading
+		isLoading: state.isLoading,
+		restaurants: state.restaurants
 	}
 }
 

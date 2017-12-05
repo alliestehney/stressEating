@@ -9,7 +9,8 @@ import RecipesList from "./RecipesList";
 import { receiveRecipes } from "../actions";
 import CookOrBuy from "./CookOrBuy";
 import { showCookOrBuy } from "../actions";
-import Restaurants from "./Restaurants";
+import Restaurant from "./Restaurants";
+import RestaurantsList from "./RestaurantsList";
 import { receiveRestaurants } from "../actions";
 
 
@@ -26,7 +27,7 @@ class App extends Component {
       )
     } else if(this.props.currentComponent === "restaurants") {
       return (
-        <Restaurants />
+        <RestaurantsList restaurants={this.props.restaurants} />
       )
     }
 
@@ -58,7 +59,8 @@ return {
   loading: state.loading,
   currentComponent: state.currentComponent,
   dietaryRestrictions: state.dietaryRestrictions,
-  cookorbuy: state.cookorbuy
+  cookorbuy: state.cookorbuy,
+  restaurants: state.restaurants
   }
 }
   export default connect(mapStateToProps,mapActionsToProps)(App);

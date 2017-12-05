@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-class Restaurants extends Component {
+class Restaurant extends Component {
 
     render() {
 
     	const restaurant = this.props.restaurant;
 
         return (
-
         	<div>
-	        	<h2 className="RecipeListTitle">Restaurants Near You</h2>
+                <div className="RecipeTitle">{restaurant.name}</div>
 			</div>
           );
     }
@@ -23,4 +22,4 @@ function mapStateToProps(state) {
 	}
 }
 
-export default connect(mapStateToProps)(Restaurants);
+export default connect(mapStateToProps)(Restaurant);
