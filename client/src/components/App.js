@@ -13,6 +13,7 @@ import { showCookOrBuy } from "../actions";
 import RestaurantsList from "./RestaurantsList";
 import { receiveRestaurants } from "../actions";
 import ErrorPage from "./ErrorPage";
+import MapComponent from "./map.js"
 
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
       )
     } else if(this.props.currentComponent === "restaurants") {
       return (
-        <RestaurantsList restaurants={this.props.restaurants} />
+        <MapComponent/>
       )
     }
 

@@ -10,6 +10,7 @@ import { createLogger } from 'redux-logger';
 import reducer from './reducers';
 // import { fetchRecipes } from './actions';
 import thunkMiddleware from 'redux-thunk';
+import geoMiddleware from 'redux-effects-geolocation';
 
 
 
@@ -17,7 +18,7 @@ import thunkMiddleware from 'redux-thunk';
 // the state (data) and calls the reducers.
 const store = createStore(
     reducer,
-    applyMiddleware( thunkMiddleware, createLogger() ) // Enable Redux logging which is handy for developers.
+    applyMiddleware( geoMiddleware(), thunkMiddleware, createLogger() ) // Enable Redux logging which is handy for developers.
 );
 
 

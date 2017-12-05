@@ -5,9 +5,11 @@ var request = require("request");
 app.get("/getdata", function(req, res) {
 
 	var radius = req.query.radius;
+	var lat = req.query.lat;
+	var long = req.query.long;
 
   	var options = {
-	    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.3314,-83.0458&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY&radius="+radius,
+	    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY&radius="+radius+"&location="+lat+","+long,
 	    headers: {
 	      json: true
     	}
