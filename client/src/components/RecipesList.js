@@ -18,7 +18,9 @@ class RecipesList extends Component {
 	            <p className="RecipeTitleP">Because you indicated a <span className="animated bounceIn stressInline">{this.props.stressLevel}</span> stress level, we think these recipes will best help you with your stress!</p>
 	            <ul className="RecipeList FlexContainer">
 	                {this.props.loading.map(recipe =>
+	    
 	                    <Recipe key={recipe.recipe.uri} recipe={recipe.recipe} />
+	                	
 	                )}
 	            </ul>
 	            <WatchForScroll />
