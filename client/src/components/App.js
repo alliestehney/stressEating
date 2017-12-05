@@ -9,7 +9,7 @@ import RecipesList from "./RecipesList";
 import { receiveRecipes } from "../actions";
 import CookOrBuy from "./CookOrBuy";
 import { showCookOrBuy } from "../actions";
-import Restaurant from "./Restaurants";
+// import Restaurant from "./Restaurants";
 import RestaurantsList from "./RestaurantsList";
 import { receiveRestaurants } from "../actions";
 
