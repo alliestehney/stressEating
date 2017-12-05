@@ -5,9 +5,13 @@ class Restaurants extends Component {
 
     render() {
 
+    	const restaurant = this.props.restaurant;
+
         return (
 
-        	<h2 className="RecipeListTitle">Restaurants Near You</h2>
+        	<div>
+	        	<h2 className="RecipeListTitle">Restaurants Near You</h2>
+			</div>
           );
     }
 
