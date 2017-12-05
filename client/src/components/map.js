@@ -11,15 +11,24 @@ class MapComponent extends React.Component {
 	      : !this.props.isGeolocationEnabled
 	        ? <div>Geolocation is not enabled</div>
 	        : this.props.coords
-	          ? 
+	          ?
 	          <RestaurantsRequest lat={this.props.coords.latitude} long={this.props.coords.longitude} />
-	        
-	          : <div className="GettingData">Getting your location&hellip; </div>;
+
+	          : <div className="GettingData">
+							<div className = "LoadingSquare">
+							 <div className="sk-folding-cube">
+               <div className="sk-cube1 sk-cube"></div>
+							  <div className="sk-cube2 sk-cube"></div>
+							  <div className="sk-cube4 sk-cube"></div>
+							  <div className="sk-cube3 sk-cube"></div>
+								</div>
+       				</div>
+			 			&hellip;</div>;
 
   	}
 
 }
- 
+
 export default geolocated({
   positionOptions: {
     enableHighAccuracy: false,
