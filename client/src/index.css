@@ -173,10 +173,14 @@ ul {
 	text-align: center;
 	font-size: 4rem;
 	font-weight: 200;
+  margin-top: 40px;
 }
 
 .BuyGuide {
 	text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 
 .StressLevelIcon:hover {
@@ -193,6 +197,7 @@ ul {
 .iconGrouping {
 	display: flex;
 	flex-direction: column;
+  justify-content: center;
 }
 
 .iconGrouping i {
@@ -306,7 +311,7 @@ ul {
 		border: none;
 		outline: none;
 	}
-	
+
 	.Submit{
 	    width:100% !important;
 	    padding: 10px;
