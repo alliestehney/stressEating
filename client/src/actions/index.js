@@ -103,9 +103,23 @@ export function fetchRecipes(dietaryRestrictions) {
 
 
 export function fetchRestaurants() {
-  return function(dispatch) {
+  return function(dispatch, getState) {
     dispatch(requestRestaurants());
-    $.get("/getdata", function(data){
+
+    const state = getState();
+    var stressLevel = state.stressLevel;
+
+    let radius;
+
+    if (stressLevel === "low") {
+      radius = 700;
+    } else if (stressLevel === "medium") {
+      //
+    } else {
+      radius = 300;
+    }
+
+    $.get("/getdata?radius="+radius, function(data){
       console.log("DATA: ", data);
       const restaurants = data.results;
       dispatch(receiveRestaurants(restaurants));

@@ -3,8 +3,11 @@ var app = express();
 var request = require("request");
 
 app.get("/getdata", function(req, res) {
+
+	var radius = req.query.radius;
+
   	var options = {
-	    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.3314,-83.0458&radius=500&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY",
+	    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.3314,-83.0458&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY&radius="+radius,
 	    headers: {
 	      json: true
     	}
