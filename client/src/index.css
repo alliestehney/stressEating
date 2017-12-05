@@ -173,10 +173,14 @@ ul {
 	text-align: center;
 	font-size: 4rem;
 	font-weight: 200;
+  margin-top: 40px;
 }
 
 .BuyGuide {
 	text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 
 .StressLevelIcon:hover {
@@ -193,6 +197,7 @@ ul {
 .iconGrouping {
 	display: flex;
 	flex-direction: column;
+  justify-content: center;
 }
 
 .iconGrouping i {
@@ -214,7 +219,7 @@ ul {
 
 
 /*mobile view*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 410px) {
 	.FlexContainer {
 		display: flex;
 		flex-direction: column;
@@ -284,7 +289,8 @@ ul {
 	}
 
 	.stressInline {
-		font-weight: 700;
+		font-weight: 500;
+		color: rgba(50, 158, 168, .8);
 	}
 
 	.StressForm {
@@ -428,6 +434,8 @@ ul {
 } /*end of mobile*/
 
 
+
+
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -445,6 +453,75 @@ ul {
 	}
 }
 
+/*iphone 6 view*/
+@media only screen and (min-width: 375px) and (max-width: 411px) {
+	.StressForm {
+		padding-bottom: 26%;
+	}
+
+	.CookOrBuy {
+		padding-bottom: 15%;
+	}
+
+	.StressIcon {
+		margin-left: -3%;
+	}
+
+	.TITLE {
+		padding-top: 3%;
+		margin: 1%;
+	}
+
+	.iconGrouping i {
+		font-size: 5rem;
+	}
+
+	.iconGrouping p {
+		font-size: 1.5rem;
+	}
+
+	.Submit {
+		margin-top: 57%;
+	}
+
+	.RecipeCard {
+		margin-left: 2%;
+	}
+}
+
+/*iphone6 plus view*/
+@media only screen and (min-width: 411px) and (max-width: 480px) {
+	.StressForm {
+		padding-bottom: 17%;
+	}
+
+	.Welcome {
+		font-size: 3rem;
+	}
+
+	.TITLE {
+		font-size: 3rem;
+	}
+
+	.StressIcon {
+		display: flex;
+		flex-direction: column;
+		margin-left: -15%;
+	}
+
+	.StressLevelIcon {
+		padding-bottom: 8%;
+	}
+
+	.iconGrouping p {
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	.iconGrouping {
+		padding-bottom: 10%;
+	}
+}
 
 /*ipad and tablet view*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -455,15 +532,14 @@ ul {
 	}
 
 	.RecipeCard {
+		width: 56%;
 		text-align: center;
-		width: 80%;
-		/*margin: 0 30%;*/
-		padding: 3% 0;
-		background-color: #66b1d6;
-		-webkit-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
-		-moz-box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
-		box-shadow: -20px 17px 36px 0px rgba(173,173,173,0.52);
 		margin: 2%;
+	}
+
+	.Ingredients {
+		text-align: left;
+		padding-left: 19%;
 	}
 
 	.Row1{
