@@ -11,9 +11,10 @@ class RestaurantsList extends Component {
 	            <ul className="RecipeList FlexContainer">
 	                {this.props.restaurants.map(restaurant =>
 	                    <Restaurant key={restaurant.id} restaurant={restaurant} />
-	                	
+
 	                )}
 	            </ul>
+							
 	        </div>
 
 		);
