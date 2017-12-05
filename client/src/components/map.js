@@ -14,7 +14,7 @@ class MapComponent extends React.Component {
 	          ? 
 	          <RestaurantsRequest lat={this.props.coords.latitude} long={this.props.coords.longitude} />
 	        
-	          : <div>Getting the location data&hellip; </div>;
+	          : <div className="GettingData">Getting your location&hellip; </div>;
 
   	}
 

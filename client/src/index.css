@@ -417,7 +417,12 @@ ul {
 			background-color: rgba(0,0,0,0.2);
     		margin: 0% 8%;
     		margin-top: 15%;
-    		padding-bottom: 40%;
+    		padding-bottom: 30%;
+		}
+
+		.GettingData {
+			text-align: center;
+			font-size: 1.2rem;
 		}
 
 } /*end of mobile*/

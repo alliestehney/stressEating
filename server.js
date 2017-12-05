@@ -9,7 +9,7 @@ app.get("/getdata", function(req, res) {
 	var long = req.query.long;
 
   	var options = {
-	    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?&type=restaurant&keyword=healthy&key=AIzaSyCJ-0UYImFpimu4zBf-yRJXmZgKnUAcIhY&radius="+radius+"&location="+lat+","+long,
+	    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?&type=restaurant&keyword=healthy&key=AIzaSyBTFz3V2VpfacuN9T25tXnDk4T4AzSySAE&radius="+radius+"&location="+lat+","+long,
 	    headers: {
 	      json: true
     	}
