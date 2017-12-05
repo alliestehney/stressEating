@@ -6,7 +6,8 @@ const INITIAL_STATE = {
     loading: [], // array that will have 3 and then we add to it
     isLoading: false,
     index: 3,
-    restaurants: []
+    restaurants: [],
+    errorPage:""
 }
 
 export default function(state=INITIAL_STATE, action) {
@@ -57,6 +58,10 @@ export default function(state=INITIAL_STATE, action) {
            return Object.assign({}, state, {
              cookorbuy: action.cookorbuy,
              currentComponent: "restaurants"
+        });
+        case "SHOW_ERROR_PAGE":
+           return Object.assign({}, state, {
+
         });
 
 		default:

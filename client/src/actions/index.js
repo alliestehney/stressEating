@@ -178,5 +178,11 @@ export function addDiet(dietaryRestrictions) {
 export function createLoadingList() {
   return {
     type: "CREATE_LOADING_LIST"
-  }
+  };
+}
+  export function showErrorPage(dietaryRestrictions) {
+    return {
+      type: "SHOW_ERROR_PAGE",
+      dietaryRestrictions
+    };
 }
