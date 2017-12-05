@@ -17,7 +17,7 @@ import ErrorPage from "./ErrorPage";
 
 class App extends Component {
   render() {
-    
+
     if (this.props.currentComponent === "stress_form") {
       return (
         <StressLevel onClick= {this.props.showCookOrBuy}/>
@@ -47,7 +47,7 @@ class App extends Component {
           <RecipesList recipes={this.props.loading} stressLevel={this.props.stressLevel} />
       );
    }
-   <ErrorPage/>
+  
 }
 }
 
