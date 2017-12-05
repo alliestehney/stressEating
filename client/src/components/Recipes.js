@@ -9,14 +9,14 @@ class Recipe extends Component {
 
 		return(
 				<div className="animated fadeInUp RecipeCard">
-					<div className="RecipeTitle">{recipe.label}</div>
+					<div className="RecipeTitle"><a href={recipe.url}>{recipe.label}</a></div>
 					<img className="RecipeImage" src={recipe.image} alt="recipe details"  />
 					<div className="Ingredients">
 						{ingredientsList.map(ingredient =>
 							<li>{ingredient}</li>
 						)}
 					</div>
-					<div className="RecipeLink"> <a href={recipe.url}>Let's make this!</a></div>
+			
 				</div>
 
 		);
