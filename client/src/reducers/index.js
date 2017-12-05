@@ -7,7 +7,9 @@ const INITIAL_STATE = {
     isLoading: false,
     index: 3,
     restaurants: [],
-    errorPage:""
+    errorPage:"",
+    lat: 0,
+    long: 0
 }
 
 export default function(state=INITIAL_STATE, action) {

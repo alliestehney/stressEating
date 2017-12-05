@@ -1,5 +1,6 @@
 import $ from 'jquery-ajax';
 
+
 // trigger the process, make the request, and call the other two actions
 // url with default argument. If called without an argument (as in index.js), it
 // will default to the main URL.
@@ -102,10 +103,24 @@ export function fetchRecipes(dietaryRestrictions) {
 }
 
 
-export function fetchRestaurants() {
-  return function(dispatch) {
+export function fetchRestaurants(lat, long) {
+  return function(dispatch, getState) {
     dispatch(requestRestaurants());
-    $.get("/getdata", function(data){
+
+    const state = getState();
+    var stressLevel = state.stressLevel;
+
+    let radius;
+
+    if (stressLevel === "low") {
+      radius = 8046.72;
+    } else if (stressLevel === "medium") {
+      radius = 3218.69
+    } else {
+      radius = 1609.34;
+    }
+
+    $.get("/getdata?radius="+radius+"&lat="+lat+"&long="+long, function(data){
       console.log("DATA: ", data);
       const restaurants = data.results;
       dispatch(receiveRestaurants(restaurants));
