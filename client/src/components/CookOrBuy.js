@@ -15,11 +15,11 @@ class CookOrBuy extends Component {
 
                 <div className="iconGrouping" onClick= {this.props.showDietaryForm.bind(this)}>
                     <i className="fa fa-home" aria-hidden="true"></i>
-                    <button className="Cook" type="button" value="cook">COOK AT HOME</button>
+                    <p className="Cook" type="button" value="cook">COOK AT HOME</p>
                 </div>
                 <div className="iconGrouping" onClick= {this.props.fetchRestaurants.bind(this)}>
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    <button className="GoOut" type="button" value="goOut">GO OUT</button>
+                    <p className="GoOut" type="button" value="goOut">GO OUT</p>
                 </div>
             </ul>
           </div>
