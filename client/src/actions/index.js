@@ -130,6 +130,12 @@ export function fetchRestaurants(lat, long) {
   }
 }
 
+export function switchToMap() {
+  return {
+    type: "MAP_COMPONENT"
+  }
+}
+
 export function requestRestaurants() {
     return {
         type: "REQUEST_RESTAURANTS"

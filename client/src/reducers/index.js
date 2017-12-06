@@ -16,8 +16,8 @@ export default function(state=INITIAL_STATE, action) {
 	switch(action.type) {
 		case "SHOW_DIETARY_FORM":
 			 return Object.assign({}, state, {
-          cookorbuy: action.cookorbuy,
-				  currentComponent: "dietary_restrictions"
+                cookorbuy: action.cookorbuy,
+				currentComponent: "dietary_restrictions"
 		    });
     case "REQUEST_RECIPES":
         return Object.assign({}, state, {
@@ -58,6 +58,10 @@ export default function(state=INITIAL_STATE, action) {
         return Object.assign({}, state, {
              cookorbuy: action.cookorbuy,
              currentComponent: "restaurants"
+        });
+    case "MAP_COMPONENT":
+        return Object.assign({}, state, {
+            currentComponent: "restaurants"
         });
     case "SHOW_ERROR_PAGE":
         return Object.assign({}, state, {

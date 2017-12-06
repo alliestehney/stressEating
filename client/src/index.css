@@ -225,7 +225,18 @@ ul {
 	margin: 7% 7%;
 }
 
+.restaurantsBackground .TITLE {
+	margin-bottom: 0;
+}
 
+.stressInline {
+	font-weight: 500;
+	color: rgba(50, 158, 168, .8);
+}
+
+.RestaurantAddress {
+	margin-top: 3%;
+}
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 410px) {
 	.FlexContainer {
@@ -286,14 +297,18 @@ ul {
 	  	background-repeat: no-repeat;
 	}
 
+	.RecipesBackground h2 {
+		margin-bottom: 0;
+	}
+
 	.RecipeListTitle {
 		font-size: 2rem;
 	}
 
 	.RecipeTitleP {
-		font-size: 1rem;
+		font-size: 1.6rem;
 		margin: 2% 10%;
-		font-weight: 300;
+		font-weight: 100;
 	}
 
 	.stressInline {
@@ -490,10 +505,21 @@ ul {
 
 	.Submit {
 		margin-top: 57%;
+		font-size: 1.3rem;
+		font-family: 'Yantramanav', sans-serif;
+		font-weight: 400;
 	}
 
 	.RecipeCard {
 		margin-left: 2%;
+	}
+
+	.DietaryPref {
+		padding-bottom: 0;
+	}
+
+	.BothRows {
+		margin-top: 8%;
 	}
 }
 
@@ -529,6 +555,75 @@ ul {
 	.iconGrouping {
 		padding-bottom: 10%;
 	}
+
+	.BuyGuide {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.CookOrBuy {
+		padding-bottom: 19%;
+	}
+
+	.Row1, .Row2 {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+
+	.Row2 {
+		padding-top: 0 !important;
+	}
+
+	.BothRows label {
+		font-size: 2rem;
+	}
+
+	.DietaryPref .TITLE {
+		padding: 0.5%;
+	}
+
+	.BothRows {
+		margin-left: 6%;
+	}
+
+	.DietaryPref {
+		padding-bottom: 0;
+	}
+
+	.Submit {
+		font-size: 1.5rem;
+		padding: 2% 10%;
+		width: 100%;
+		margin: 16% 0 0 0;
+	}
+
+	.RecipeList {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.RecipeCard {
+		width: 88%;
+	}
+
+	.RecipeTitleP {
+		font-size: 1.6rem;
+		margin: 2% 10%;
+		font-weight: 100;
+	}
+
+	.stressInline {
+		font-weight: 500;
+		color: rgba(50, 158, 168, .8);
+	}
+
+	.recipesBackground .TITLE {
+		margin-bottom: 0;
+	}
+
 }
 
 /*ipad and tablet view*/

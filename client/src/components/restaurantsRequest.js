@@ -9,12 +9,18 @@ class RestaurantsRequest extends Component {
 
 	render() {
 
-		this.props.fetchRestaurants(this.props.lat, this.props.long);
+		
 		return (
 			this.props.restaurants ? <RestaurantsList  restaurants={this.props.restaurants} /> : <p>LOADING...</p>
 		);
 	}
+
+	componentWillMount() {
+		this.props.fetchRestaurants(this.props.lat, this.props.long);
+	}
 }
+
+
 
 const mapActionsToProps = {
 	fetchRestaurants
