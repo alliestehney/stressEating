@@ -11,8 +11,6 @@ import reducer from './reducers';
 // import { fetchRecipes } from './actions';
 import thunkMiddleware from 'redux-thunk';
 
-var port = process.env.PORT || 5000;
-
 
 // Create the redux Store. This is the central hub of Redux. It keeps track of
 // the state (data) and calls the reducers.
