@@ -21,6 +21,7 @@ class MapComponent extends Component {
 							  <div className="sk-cube4 sk-cube"></div>
 							  <div className="sk-cube3 sk-cube"></div>
 								</div>
+								<p className = "Location">Getting your location</p>
        				</div>
 			 			</div>;
 

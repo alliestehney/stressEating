@@ -842,3 +842,6 @@ label:hover, input[type=checkbox]:hover {
 .LoadingSquare{
   margin-top: 25%;
 }
+.Loading{
+  margin-left: 50%;
+}
