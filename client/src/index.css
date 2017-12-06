@@ -626,8 +626,8 @@ label:hover, input[type=checkbox]:hover {
 
 .sk-folding-cube {
  margin: 20px auto;
- width: 40px;
- height: 40px;
+ width: 75px;
+ height: 75px;
  position: relative;
  -webkit-transform: rotateZ(45deg);
          transform: rotateZ(45deg);
@@ -710,4 +710,7 @@ label:hover, input[type=checkbox]:hover {
            transform: perspective(140px) rotateY(180deg);
    opacity: 0;
  }
+}
+.LoadingSquare{
+  margin-top: 25%;
 }
