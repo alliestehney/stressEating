@@ -199,7 +199,12 @@ ul {
 .iconGrouping {
 	display: flex;
 	flex-direction: column;
-  justify-content: center;
+  	justify-content: center;
+}
+
+.iconGrouping:hover {
+	color: #D3D3D3;
+	cursor: pointer;
 }
 
 .iconGrouping i {
