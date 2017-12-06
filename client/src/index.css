@@ -80,10 +80,6 @@ html, body {
 	flex-wrap: wrap;
 }
 
-.stressInline {
-	font-weight: 700;
-}
-
 .StressForm {
   text-align: center;
   width: 75%;
@@ -138,8 +134,10 @@ ul {
 
 .RecipeTitleP {
 	text-align: center;
-	font-weight: 200;
-	font-size: 1.2rem;
+	font-weight: 300;
+	font-size: 2rem;
+	margin-top: 0;
+	color: gray;
 }
 
 .Submit{
@@ -230,13 +228,18 @@ ul {
 }
 
 .stressInline {
-	font-weight: 500;
-	color: rgba(50, 158, 168, .8);
+	font-weight: 600;
+	color: gray;
 }
 
 .RestaurantAddress {
 	margin-top: 3%;
 }
+
+.recipesBackground .TITLE {
+	margin-bottom: 0;
+}
+
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 410px) {
 	.FlexContainer {
@@ -312,8 +315,8 @@ ul {
 	}
 
 	.stressInline {
-		font-weight: 500;
-		color: rgba(50, 158, 168, .8);
+		font-weight: 600;
+		color: gray;
 	}
 
 	.StressForm {
@@ -616,8 +619,8 @@ ul {
 	}
 
 	.stressInline {
-		font-weight: 500;
-		color: rgba(50, 158, 168, .8);
+		font-weight: 600;
+		color: gray;
 	}
 
 	.recipesBackground .TITLE {
