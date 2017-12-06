@@ -21,7 +21,7 @@ class Restaurant extends Component {
 
         return (
         	<div className="animated fadeInUp RecipeCard">
-                <div className="RecipeTitle"><a href={`https://www.google.com/maps/place/${restaurant.name}/@${restaurant.geometry.location.lat},${restaurant.geometry.location.lng}`}>{restaurant.name}</a></div>
+                <div className="RecipeTitle"><a target="_blank" href={`https://www.google.com/maps/place/${restaurant.name}/@${restaurant.geometry.location.lat},${restaurant.geometry.location.lng}`}>{restaurant.name}</a></div>
                 <div className="RestaurantAddress">{restaurant.vicinity}</div>
 			</div>
           );
