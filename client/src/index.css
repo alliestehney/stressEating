@@ -225,7 +225,18 @@ ul {
 	margin: 7% 7%;
 }
 
+.restaurantsBackground .TITLE {
+	margin-bottom: 0;
+}
 
+.stressInline {
+	font-weight: 500;
+	color: rgba(50, 158, 168, .8);
+}
+
+.RestaurantAddress {
+	margin-top: 3%;
+}
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 410px) {
 	.FlexContainer {
