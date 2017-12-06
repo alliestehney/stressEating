@@ -15,7 +15,7 @@ class RecipesList extends Component {
         return (
         	<div className="recipesBackground">
         		<h2 className="TITLE">Recipe Suggestions</h2>
-	            <p className="RecipeTitleP">Because you indicated a <span className="animated bounceIn stressInline">{this.props.stressLevel}</span> stress level, we think these recipes will best help you with your stress!</p>
+	            <p className="RecipeTitleP">Try these recipes to help with your <span className="animated bounceIn stressInline">{this.props.stressLevel}</span> stress level!</p>
 	            <ul className="RecipeList FlexContainer">
 	                {this.props.loading.map(recipe =>
 	    

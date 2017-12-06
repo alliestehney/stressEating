@@ -286,14 +286,18 @@ ul {
 	  	background-repeat: no-repeat;
 	}
 
+	.RecipesBackground h2 {
+		margin-bottom: 0;
+	}
+
 	.RecipeListTitle {
 		font-size: 2rem;
 	}
 
 	.RecipeTitleP {
-		font-size: 1rem;
+		font-size: 1.6rem;
 		margin: 2% 10%;
-		font-weight: 300;
+		font-weight: 100;
 	}
 
 	.stressInline {
@@ -490,10 +494,21 @@ ul {
 
 	.Submit {
 		margin-top: 57%;
+		font-size: 1.3rem;
+		font-family: 'Yantramanav', sans-serif;
+		font-weight: 400;
 	}
 
 	.RecipeCard {
 		margin-left: 2%;
+	}
+
+	.DietaryPref {
+		padding-bottom: 0;
+	}
+
+	.BothRows {
+		margin-top: 8%;
 	}
 }
 

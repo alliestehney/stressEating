@@ -22,7 +22,7 @@ class MapComponent extends Component {
 							  <div className="sk-cube3 sk-cube"></div>
 								</div>
        				</div>
-			 			&hellip;</div>;
+			 			</div>;
 
   	}
 
