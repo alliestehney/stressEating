@@ -8,6 +8,7 @@ body {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 html, body {
@@ -137,7 +138,7 @@ ul {
 	font-weight: 300;
 	font-size: 2rem;
 	margin-top: 0;
-	color: gray;
+	color: white;
 }
 
 .Submit{
@@ -229,7 +230,7 @@ ul {
 
 .stressInline {
 	font-weight: 600;
-	color: gray;
+	color: white;
 }
 
 .RestaurantAddress {
@@ -316,7 +317,7 @@ ul {
 
 	.stressInline {
 		font-weight: 600;
-		color: gray;
+		color: white;
 	}
 
 	.StressForm {
@@ -620,7 +621,7 @@ ul {
 
 	.stressInline {
 		font-weight: 600;
-		color: gray;
+		color: white;
 	}
 
 	.recipesBackground .TITLE {

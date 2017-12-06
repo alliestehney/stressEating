@@ -9,7 +9,7 @@ class RestaurantsList extends Component {
 		return(
 			<div className="restaurantsBackground">
 				<h2 className="TITLE">Nearby Restaurants</h2>
-				<p className="RecipeTitleP">Your stress is <span className="animated bounceIn stressInline">{this.props.stressLevel}</span> - take a break and go grab dinner.</p>
+				<p className="RecipeTitleP">Your stress is <span className="animated bounceIn stressInline">{this.props.stressLevel}</span> - take a break and go grab food.</p>
 	            <ul className="RecipeList FlexContainer">
 	                {this.props.restaurants.map(restaurant =>
 	                    <Restaurant key={restaurant.id} restaurant={restaurant} />
