@@ -16,7 +16,7 @@ class Recipe extends Component {
 							<li key={ingredient}>{ingredient}</li>
 						)}
 					</div>
-			
+
 				</div>
 
 		);

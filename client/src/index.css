@@ -555,6 +555,8 @@ ul {
 	  justify-content: space-around;
 	  flex-direction: column;
 	  justify-content: center;
+    padding-right: 20px;
+
 	}
 
 	.Row2{
@@ -562,6 +564,7 @@ ul {
 	  justify-content: space-around;
 	  flex-direction: column;
 	  justify-content: center;
+
 	}
 
 	h2{
@@ -585,6 +588,35 @@ ul {
 		flex-direction: column;
 	}
 
+
+  .dietpref {
+    display: flex;
+    flex-direction: row;
+    padding: 46px;
+    /*font-size: 2.5rem !important;*/
+  }
+.BothRows{
+  display: flex;
+  justify-content: center;
+
+}
+.Submit {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 162px;
+ font-size: 1.5rem;
+ margin-top: 47px;
+}
+input[type=checkbox], label {
+	font-size: 2rem !important;
+
+}
+.DietaryPref{
+  margin-top: 12%;
+
+}
 
 } /*end of tablet view*/
 
