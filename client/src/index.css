@@ -142,7 +142,7 @@ ul {
 }
 
 .Submit{
-  padding:10px 20px;
+  padding: 1% 4%;
   background-color: rgba(50, 158, 168, .8);
   margin: auto 41%;
   color: white;
@@ -151,6 +151,7 @@ ul {
   margin-top: 3%;
   font-size: 0.9rem;
   outline: none;
+  border: none;
 
 }
 
@@ -161,11 +162,12 @@ ul {
 
 .DietaryPref{
   background-color: rgba(0,0,0,0.2);
-  width: 57%;
+  width: 88%;
   align-content: center;
   text-align: center;
   margin: auto;
   margin-top: 6%;
+  padding-bottom: 10%;
 
 }
 
@@ -173,14 +175,14 @@ ul {
 	text-align: center;
 	font-size: 4rem;
 	font-weight: 200;
-  margin-top: 40px;
+  	margin-top: 40px;
 }
 
 .BuyGuide {
 	text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: -10%;
 }
 
 .StressLevelIcon:hover {

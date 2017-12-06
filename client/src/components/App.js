@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import DietaryPref from './DietaryPref';
 import StressLevel from './StressLevel';
-// import Recipe from "./Recipes";
-// import WatchForScroll from "./ScrollActions";
 import { connect } from 'react-redux';
 import { showDietaryForm } from '../actions';
 import RecipesList from "./RecipesList";
 import { receiveRecipes } from "../actions";
 import CookOrBuy from "./CookOrBuy";
 import { showCookOrBuy } from "../actions";
-// import Restaurant from "./Restaurants";
-import RestaurantsList from "./RestaurantsList";
 import { receiveRestaurants } from "../actions";
 import ErrorPage from "./ErrorPage";
 import MapComponent from "./map.js"

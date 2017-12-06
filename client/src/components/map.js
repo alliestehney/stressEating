@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {geolocated} from 'react-geolocated';
-import { connect } from 'react-redux';
 import RestaurantsRequest from './restaurantsRequest.js';
 
-class MapComponent extends React.Component {
+class MapComponent extends Component {
 
 	render() {
 	    return !this.props.isGeolocationAvailable

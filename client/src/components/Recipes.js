@@ -13,7 +13,7 @@ class Recipe extends Component {
 					<img className="RecipeImage" src={recipe.image} alt="recipe details"  />
 					<div className="Ingredients">
 						{ingredientsList.map(ingredient =>
-							<li>{ingredient}</li>
+							<li key={ingredient}>{ingredient}</li>
 						)}
 					</div>
 			
