@@ -713,7 +713,8 @@ input[type=checkbox], label {
 
 }
 .DietaryPref{
-  margin-top: 12%;
+  margin-top: 10%;
+  margin-left: auto;
 
 }
 
@@ -844,4 +845,7 @@ label:hover, input[type=checkbox]:hover {
 }
 .LoadingSquare{
   margin-top: 25%;
+}
+.Loading{
+  margin-left: 50%;
 }
