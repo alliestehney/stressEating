@@ -241,6 +241,39 @@ ul {
 	margin-bottom: 0;
 }
 
+.BothRows {
+		margin-top: 8%;
+		margin: auto;
+		text-align: left;
+		margin-left: 14%;
+		margin-right: 14%;
+	}
+
+	.vegan {
+		margin-right: 13%;
+	}
+
+	.vegetarian {
+		margin-right: 10%;
+	}
+
+	.treenutfree {
+		margin-left: -0.7%
+	}
+
+	.treenutfreeLabel {
+		margin-right: 5%;
+		margin-left: -4%;
+	}
+
+	.lowcarb {
+		margin-right: 5%;
+	}
+
+	.highprotein {
+		margin-left: 2%;
+	}
+
 /*mobile view*/
 @media only screen and (min-width: 320px) and (max-width: 410px) {
 	.FlexContainer {
@@ -359,7 +392,6 @@ ul {
 	}
 	.Row2{
 	    display: flex;
-	    justify-content: space-around;
 	    flex-direction: column;
 	    justify-content: center;
 	}
@@ -522,9 +554,6 @@ ul {
 		padding-bottom: 0;
 	}
 
-	.BothRows {
-		margin-top: 8%;
-	}
 }
 
 /*iphone6 plus view*/
@@ -579,6 +608,8 @@ ul {
 
 	.Row2 {
 		padding-top: 0 !important;
+		margin-top: 0%;
+		margin-left: -0.1%;
 	}
 
 	.BothRows label {
