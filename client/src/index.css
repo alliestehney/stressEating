@@ -761,6 +761,19 @@ ul {
 		flex-direction: column;
 	}
 
+	.RecipeTitleP {
+		color: gray;
+		font-weight: 300;
+	}
+
+	.recipesBackground .TITLE {
+		color: gray;
+		font-weight: 400;
+	}
+
+	.stressInline {
+		color: gray;
+	}
 
   .dietpref {
     display: flex;
