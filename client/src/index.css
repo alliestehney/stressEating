@@ -487,6 +487,11 @@ ul {
 			width: 100%;
 			align-items: left;
 		}
+
+		.restaurantsBackground .TITLE {
+		color: gray;
+		font-weight: 400;
+	}
 } /*end of mobile*/
 
 
@@ -578,6 +583,11 @@ ul {
 	.stressInline {
 		font-weight: 600;
 		color: gray;
+	}
+
+	.restaurantsBackground .TITLE {
+		color: gray;
+		font-weight: 400;
 	}
 
 }
@@ -818,6 +828,11 @@ input[type=checkbox], label {
 	align-items: left;
 }
 
+.restaurantsBackground .TITLE {
+		color: gray;
+		font-weight: 400;
+	}
+
 } /*end of tablet view*/
 
 @media only screen and (min-width: 1024px) and (max-width: 1225px) {
@@ -837,6 +852,11 @@ input[type=checkbox], label {
 
 	.RecipeList img {
 		width: 90%;
+	}
+
+	.restaurantsBackground .TITLE {
+		color: gray;
+		font-weight: 400;
 	}	
 }
 
