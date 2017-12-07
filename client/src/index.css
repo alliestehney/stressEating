@@ -820,6 +820,22 @@ input[type=checkbox], label {
 
 } /*end of tablet view*/
 
+@media only screen and (min-width: 1024px) and (max-width: 1225px) {
+	.RecipeTitleP {
+		color: gray;
+		font-weight: 300;
+	}
+
+	.recipesBackground .TITLE {
+		color: gray;
+		font-weight: 400;
+	}
+
+	.stressInline {
+		color: gray;
+	}	
+}
+
 .Row2{
   display: flex;
   justify-content: space-around;
