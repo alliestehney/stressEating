@@ -315,8 +315,10 @@ ul {
 	  	background-repeat: no-repeat;
 	}
 
-	.RecipesBackground h2 {
+	.recipesBackground .TITLE {
 		margin-bottom: 0;
+		color: gray;
+		font-weight: 400;
 	}
 
 	.RecipeListTitle {
@@ -327,11 +329,13 @@ ul {
 		font-size: 1.6rem;
 		margin: 2% 10%;
 		font-weight: 100;
+		color: gray;
+		font-weight: 300;
 	}
 
 	.stressInline {
 		font-weight: 600;
-		color: white;
+		color: gray;
 	}
 
 	.StressForm {
@@ -519,6 +523,17 @@ ul {
 		margin-left: -3%;
 	}
 
+	.recipesBackground .TITLE {
+		margin-bottom: 0;
+		color: gray;
+		font-weight: 400;
+	}
+
+	.RecipeTitleP {
+		color: gray;
+		font-weight: 300;
+	}
+
 	.TITLE {
 		padding-top: 3%;
 		margin: 1%;
@@ -558,6 +573,11 @@ ul {
 	.flex-item {
 		width: 100%;
 		align-items: left;
+	}
+
+	.stressInline {
+		font-weight: 600;
+		color: gray;
 	}
 
 }
@@ -654,15 +674,19 @@ ul {
 		font-size: 1.6rem;
 		margin: 2% 10%;
 		font-weight: 100;
+		color: gray;
+		font-weight: 300;
 	}
 
 	.stressInline {
 		font-weight: 600;
-		color: white;
+		color: gray;
 	}
 
 	.recipesBackground .TITLE {
 		margin-bottom: 0;
+		color: gray;
+		font-weight: 400;
 	}
 
 	.flex-container {
