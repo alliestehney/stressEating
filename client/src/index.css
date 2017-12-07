@@ -833,6 +833,10 @@ input[type=checkbox], label {
 
 	.stressInline {
 		color: gray;
+	}
+
+	.RecipeList img {
+		width: 90%;
 	}	
 }
 
