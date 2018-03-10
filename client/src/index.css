@@ -52,6 +52,7 @@ html, body {
 .RecipeList img {
 	margin-left: -1%;
 	margin-top: 5%;
+  width: 90%;
 }
 
 .Ingredients li {
@@ -284,6 +285,7 @@ ul {
 		font-weight: 400;
 		font-family: 'Yantramanav', sans-serif;
 		height: 7%;
+
 	}
 
 	.RecipeTitle a {
@@ -317,7 +319,7 @@ ul {
 
 	.recipesBackground .TITLE {
 		margin-bottom: 0;
-		color: gray;
+		color: white;
 		font-weight: 400;
 	}
 
@@ -329,13 +331,13 @@ ul {
 		font-size: 1.6rem;
 		margin: 2% 10%;
 		font-weight: 100;
-		color: gray;
+		color: white;
 		font-weight: 300;
 	}
 
 	.stressInline {
 		font-weight: 600;
-		color: gray;
+		color: white;
 	}
 
 	.StressForm {
@@ -526,18 +528,21 @@ ul {
 
 	.StressIcon {
 		margin-left: -3%;
+
 	}
 
 	.recipesBackground .TITLE {
 		margin-bottom: 0;
-		color: gray;
+		color: white;
 		font-weight: 400;
 	}
 
 	.RecipeTitleP {
-		color: gray;
+		color: white;
 		font-weight: 300;
 	}
+
+
 
 	.TITLE {
 		padding-top: 3%;
@@ -582,7 +587,7 @@ ul {
 
 	.stressInline {
 		font-weight: 600;
-		color: gray;
+		color: white;
 	}
 
 	.restaurantsBackground .TITLE {
@@ -595,7 +600,7 @@ ul {
 /*iphone6 plus view*/
 @media only screen and (min-width: 411px) and (max-width: 480px) {
 	.StressForm {
-		padding-bottom: 17%;
+		padding-bottom: 0%;
 	}
 
 	.Welcome {
@@ -631,7 +636,7 @@ ul {
 	}
 
 	.CookOrBuy {
-		padding-bottom: 19%;
+		/*padding-bottom: 19%; */
 	}
 
 	.Row1, .Row2 {
@@ -684,18 +689,18 @@ ul {
 		font-size: 1.6rem;
 		margin: 2% 10%;
 		font-weight: 100;
-		color: gray;
+		color: white;
 		font-weight: 300;
 	}
 
 	.stressInline {
 		font-weight: 600;
-		color: gray;
+		color: white;
 	}
 
 	.recipesBackground .TITLE {
 		margin-bottom: 0;
-		color: gray;
+		color: white;
 		font-weight: 400;
 	}
 
@@ -772,17 +777,17 @@ ul {
 	}
 
 	.RecipeTitleP {
-		color: gray;
+		color: white;
 		font-weight: 300;
 	}
 
 	.recipesBackground .TITLE {
-		color: gray;
+		color: white;
 		font-weight: 400;
 	}
 
 	.stressInline {
-		color: gray;
+		color: white;
 	}
 
   .dietpref {
@@ -837,17 +842,17 @@ input[type=checkbox], label {
 
 @media only screen and (min-width: 1024px) and (max-width: 1225px) {
 	.RecipeTitleP {
-		color: gray;
+		color: white;
 		font-weight: 300;
 	}
 
 	.recipesBackground .TITLE {
-		color: gray;
+		color: white;
 		font-weight: 400;
 	}
 
 	.stressInline {
-		color: gray;
+		color: white;
 	}
 
 	.RecipeList img {
@@ -857,7 +862,7 @@ input[type=checkbox], label {
 	.restaurantsBackground .TITLE {
 		color: gray;
 		font-weight: 400;
-	}	
+	}
 }
 
 .Row2{
